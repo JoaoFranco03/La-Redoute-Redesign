@@ -1,0 +1,74 @@
+.greenBtn {
+  background-color: #44c767;
+}
+.greenBtn:hover {
+  background-color: #3cb05b;
+}
+.greenBtn:active {
+  background-color: #256e39 !important;
+}
+
+.lightBrownBtn {
+  background-color: #ddba94;
+}
+.lightBrownBtn:hover {
+  background-color: #b8946c;
+}
+.lightBrownBtn:active {
+  background-color: #8a6b49 !important;
+}
+
+.darkBrownBtn {
+  background-color: #56433D;
+}
+.darkBrownBtn:hover {
+  background-color: #40302b;
+}
+.darkBrownBtn:active {
+  background-color: #211815 !important;
+}
+
+.darkBrownBtn {
+  background-color: #344F5B;
+}
+.darkBrownBtn:hover {
+  background-color: #233942;
+}
+.darkBrownBtn:active {
+  background-color: #142329 !important;
+}
+
+.btn-light{
+  border: 1px solid #D3D4D5; /* Green */
+}
+
+.btn-color {
+  margin-right: 5px;
+  width: 40px;
+  height: 40px;
+  padding: 0%;
+  border-radius: 50%;
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.btn-color:hover {
+  transform: scale(1.15);
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  overflow-x: hidden;
+  animation: fadeInAnimation ease 1s;
+  animation-iteration-count: 1;
+  animation-fill-mode: forwards;
+}
+
+@keyframes fadeInAnimation {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
