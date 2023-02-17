@@ -67,7 +67,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+[![Product Name Screen Shot][mockup]]
 
 This repository contains a Redesign Project of the La Redoute E-Commerce website.<br>
 The goal of this project was to create a more modern, user-friendly and visually appealing version of the original website.<br>
@@ -145,7 +145,7 @@ Project Link: [https://github.com/JoaoFranco03/La-Redoute-Redesign/](https://git
 [license-url]: https://github.com/JoaoFranco03/La-Redoute-Redesign/blob/master/LICENSE.md
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/joão-franco-452161195/
-[product-screenshot]: assets/github/mockup.png
+[mockup]: assets/github/mockup.png
 [Bootstrap-badge]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
 [Bootstrap-url]: https://getbootstrap.com
 [HTML-badge]: https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white
