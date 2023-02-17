@@ -67,7 +67,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][mockup]]
+![Product Name Screen Shot][mockup]
 
 This repository contains a Redesign Project of the La Redoute E-Commerce website.<br>
 The goal of this project was to create a more modern, user-friendly and visually appealing version of the original website.<br>
