@@ -27,7 +27,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/JoaoFranco03/La-Redoute-Redesign/">
-    <img src="assets/github/logo.png" alt="Logo" width="80" height="80">
+    <img src="dist/assets/github/logo.png" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">La Redoute Redesign</h3>
@@ -145,7 +145,7 @@ Project Link: [https://github.com/JoaoFranco03/La-Redoute-Redesign/](https://git
 [license-shield]: https://img.shields.io/github/license/JoaoFranco03/La-Redoute-Redesign.svg?style=for-the-badge
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/joão-franco-452161195/
-[mockup]: assets/github/mockup.png
+[mockup]: dist/assets/github/mockup.png
 [Bootstrap-badge]: https://img.shields.io/badge/Bootstrap-563D7C?style=for-the-badge&logo=bootstrap&logoColor=white
 [Bootstrap-url]: https://getbootstrap.com
 [HTML-badge]: https://img.shields.io/badge/HTML-239120?style=for-the-badge&logo=html5&logoColor=white
