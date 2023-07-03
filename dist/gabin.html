@@ -1,1646 +1,826 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- Set Safari Tab Color -->
-    <meta name="theme-color" content="#FFFFFF" />
-    <!-- Titulo da Página -->
-    <title>Gabin</title>
-    <!-- Bootstrap e BootstrapIcons -->
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css"
-    />
-    <!-- JQuery para Animação de Tutorial -->
-    <script
-      src="https://code.jquery.com/jquery-3.6.1.min.js"
-      integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
-      crossorigin="anonymous"
-    ></script>
-    <!-- Fontes -->
-    <link
-      rel="stylesheet"
-      href="https://fonts.googleapis.com/css?family=Poppins"
-    />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap"
-      rel="stylesheet"
-    />
-    <!-- CSS -->
-    <link rel="stylesheet" href="css/defaults.css" />
-    <link rel="stylesheet" href="css/glassEffects.css" />
-    <link rel="stylesheet" href="css/productPage.css" />
-  </head>
-  <body class="fade-in bg-body-tertiary">
-    <!-- Script para modo de Realidade Aumentada -->
-    <script type="module" src="https://unpkg.com/@leoncvlt/ar-button"></script>
-    <div
-      class="container-fluid px-0 px-md-5 bg-body"
-      style="overflow-x: hidden"
-    >
-      <!-- Navbars -->
-      <div class="row">
-        <div class="col-12 px-0">
-          <img
-            src="./assets/img/NavBarLogoDark.png"
-            class="d-none d-md-block w-100 pt-3"
-            alt=""
-          />
-          <img
-            src="./assets/img/NavbarMobileDark.png"
-            class="d-md-none w-100 navbarImage pt-3"
-            alt=""
-          />
-        </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <!-- Set Safari Tab Color -->
+  <meta name="theme-color" content="#FFFFFF" />
+  <!-- Titulo da Página -->
+  <title>Gabin</title>
+  <!-- Bootstrap e BootstrapIcons -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css" />
+  <!-- JQuery para Animação de Tutorial -->
+  <script src="https://code.jquery.com/jquery-3.6.1.min.js"
+    integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>
+  <!-- Fontes -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet" />
+  <!-- CSS -->
+  <link rel="stylesheet" href="css/defaults.css" />
+  <link rel="stylesheet" href="css/glassEffects.css" />
+  <link rel="stylesheet" href="css/productPage.css" />
+</head>
+
+<body class="fade-in bg-body-tertiary">
+  <!-- Script para modo de Realidade Aumentada -->
+  <script type="module" src="https://unpkg.com/@leoncvlt/ar-button"></script>
+  <div class="container-fluid px-0 px-md-5 bg-body" style="overflow-x: hidden">
+    <!-- Navbars -->
+    <div class="row">
+      <div class="col-12 px-0">
+        <img src="./assets/img/NavBarLogoDark.png" class="d-none d-md-block w-100 pt-3" alt="" />
+        <img src="./assets/img/NavbarMobileDark.png" class="d-md-none w-100 navbarImage pt-3" alt="" />
       </div>
-      <!-- Breadcumbs -->
-      <div class="row px-0 d-none d-md-block">
-        <div class="col-12 px-0 navigationText">
-          <p>
-            <a
-              class="link"
-              href="https://www.laredoute.pt/pplp/100/75363/cat-158092.aspx#srt=noSorting"
-              >Mobília</a
-            >
-            <a></a>
-            <span class="px-1">\</span>
-            <a class="link" href="./index.html"> Móveis de TV </a>
-            <span class="px-1">\</span>
-            <span class="px-1 text-secondary">Gabin</span>
-          </p>
-        </div>
+    </div>
+    <!-- Breadcumbs -->
+    <div class="row px-0 d-none d-md-block">
+      <div class="col-12 px-0 navigationText">
+        <p>
+          <a class="link" href="https://www.laredoute.pt/pplp/100/75363/cat-158092.aspx#srt=noSorting">Mobília</a>
+          <a></a>
+          <span class="px-1">\</span>
+          <a class="link" href="./index.html"> Móveis de TV </a>
+          <span class="px-1">\</span>
+          <span class="px-1 text-secondary">Gabin</span>
+        </p>
       </div>
-      <div class="row px-0">
-        <div class="col-12 col-md-8 pe-1 pe-4">
-          <div class="sticky-top">
-            <div class="row d-block">
-              <div id="galeria" class="carousel slide px-0 pt-3">
-                <div class="carousel-inner" id="inner">
-                  <div class="carousel-item active">
-                    <!-- 1a Imagem do Produto -->
-                    <div style="position: relative; left: 0; top: 0">
-                      <img
-                        src="./assets/Renders/View1/handler_default-1.png"
-                        style="z-index: 5"
-                        class="handlerDefault another-rec carouselImg confHandler w-100 rounded"
-                        alt="First slide"
-                      />
-                      <img
-                        src="./assets/Renders/View1/handler_leather-1.png"
-                        style="z-index: 5"
-                        class="d-none handlerLeather another-rec carouselImg confHandler w-100 rounded"
-                        alt="First slide"
-                      />
-                      <img
-                        src="./assets/Renders/View1/handler_modern-1.png"
-                        style="z-index: 5"
-                        class="d-none handlerModern another-rec carouselImg confHandler w-100 rounded"
-                        alt="First slide"
-                      />
-                      <img
-                        src="./assets/Renders/View1/window_wicker-1.png"
-                        style="z-index: 4"
-                        class="windowWicker another-rec carouselImg confWindow w-100 rounded"
-                        alt="First slide"
-                      />
-                      <img
-                        src="./assets/Renders/View1/window_glass-1.png"
-                        style="z-index: 4"
-                        class="d-none windowGlass another-rec carouselImg confWindow w-100 rounded"
-                        alt="First slide"
-                      />
-                      <img
-                        src="./assets/Renders/View1/top_pinho-1.png"
-                        style="z-index: 3"
-                        class="topPinho rect carouselImg confTop w-100 rounded"
-                        alt="First slide"
-                      />
-                      <img
-                        src="./assets/Renders/View1/top_plywood-1.png"
-                        style="z-index: 3"
-                        class="d-none topPlywood rect carouselImg confTop w-100 rounded"
-                        alt="First slide"
-                      />
-                      <img
-                        src="./assets/Renders/View1/top_whiteglass-1.png"
-                        style="z-index: 3"
-                        class="d-none topWhiteGlass rect carouselImg confTop w-100 rounded"
-                        alt="First slide"
-                      />
-                      <img
-                        src="./assets/Renders/View1/top_marble-1.png"
-                        style="z-index: 3"
-                        class="d-none topMarble rect carouselImg confTop w-100 rounded"
-                        alt="First slide"
-                      />
-                      <img
-                        src="./assets/Renders/View1/top_blackglass-1.png"
-                        style="z-index: 3"
-                        class="d-none topBlackGlass rect carouselImg confTop w-100 rounded"
-                        alt="First slide"
-                      />
-                      <img
-                        src="./assets/Renders/View1/rack_pinho-1.png"
-                        style="z-index: 2"
-                        class="rackPinho another-rec carouselImg confRack w-100 rounded"
-                        alt="First slide"
-                      />
-                      <img
-                        src="./assets/Renders/View1/rack_plywood-1.png"
-                        style="z-index: 2"
-                        class="d-none rackPlywood another-rec carouselImg confRack w-100 rounded"
-                        alt="First slide"
-                      />
-                      <img
-                        src="./assets/Renders/View1/feet_pinho-1.png"
-                        style="z-index: 4"
-                        class="feetPinho another-rec carouselImg confFeet w-100 rounded"
-                        alt="First slide"
-                      />
-                      <img
-                        src="./assets/Renders/View1/feet_plywood-1.png"
-                        style="z-index: 4"
-                        class="d-none-plywood feetPlywood another-rec carouselImg confFeet w-100 rounded"
-                        alt="First slide"
-                      />
-                      <img
-                        src="./assets/Renders/View1/feet_modern-1.png"
-                        style="z-index: 4"
-                        class="d-none feetModern another-rec carouselImg confFeet w-100 rounded"
-                        alt="First slide"
-                      />
-                    </div>
+    </div>
+    <div class="row px-0">
+      <div class="col-12 col-md-8 pe-1 pe-4">
+        <div class="sticky-top">
+          <div class="row d-block">
+            <div id="galeria" class="carousel slide px-0 pt-3">
+              <div class="carousel-inner" id="inner">
+                <div class="carousel-item active">
+                  <!-- 1a Imagem do Produto -->
+                  <div style="position: relative; left: 0; top: 0">
+                    <img src="./assets/Renders/View1/handler_default-1.png" style="z-index: 5"
+                      class="handlerDefault another-rec carouselImg confHandler w-100 rounded" alt="First slide" />
+                    <img src="./assets/Renders/View1/handler_leather-1.png" style="z-index: 5"
+                      class="d-none handlerLeather another-rec carouselImg confHandler w-100 rounded"
+                      alt="First slide" />
+                    <img src="./assets/Renders/View1/handler_modern-1.png" style="z-index: 5"
+                      class="d-none handlerModern another-rec carouselImg confHandler w-100 rounded"
+                      alt="First slide" />
+                    <img src="./assets/Renders/View1/window_wicker-1.png" style="z-index: 4"
+                      class="windowWicker another-rec carouselImg confWindow w-100 rounded" alt="First slide" />
+                    <img src="./assets/Renders/View1/window_glass-1.png" style="z-index: 4"
+                      class="d-none windowGlass another-rec carouselImg confWindow w-100 rounded" alt="First slide" />
+                    <img src="./assets/Renders/View1/top_pinho-1.png" style="z-index: 3"
+                      class="topPinho rect carouselImg confTop w-100 rounded" alt="First slide" />
+                    <img src="./assets/Renders/View1/top_plywood-1.png" style="z-index: 3"
+                      class="d-none topPlywood rect carouselImg confTop w-100 rounded" alt="First slide" />
+                    <img src="./assets/Renders/View1/top_whiteglass-1.png" style="z-index: 3"
+                      class="d-none topWhiteGlass rect carouselImg confTop w-100 rounded" alt="First slide" />
+                    <img src="./assets/Renders/View1/top_marble-1.png" style="z-index: 3"
+                      class="d-none topMarble rect carouselImg confTop w-100 rounded" alt="First slide" />
+                    <img src="./assets/Renders/View1/top_blackglass-1.png" style="z-index: 3"
+                      class="d-none topBlackGlass rect carouselImg confTop w-100 rounded" alt="First slide" />
+                    <img src="./assets/Renders/View1/rack_pinho-1.png" style="z-index: 2"
+                      class="rackPinho another-rec carouselImg confRack w-100 rounded" alt="First slide" />
+                    <img src="./assets/Renders/View1/rack_plywood-1.png" style="z-index: 2"
+                      class="d-none rackPlywood another-rec carouselImg confRack w-100 rounded" alt="First slide" />
+                    <img src="./assets/Renders/View1/feet_pinho-1.png" style="z-index: 4"
+                      class="feetPinho another-rec carouselImg confFeet w-100 rounded" alt="First slide" />
+                    <img src="./assets/Renders/View1/feet_plywood-1.png" style="z-index: 4"
+                      class="d-none-plywood feetPlywood another-rec carouselImg confFeet w-100 rounded"
+                      alt="First slide" />
+                    <img src="./assets/Renders/View1/feet_modern-1.png" style="z-index: 4"
+                      class="d-none feetModern another-rec carouselImg confFeet w-100 rounded" alt="First slide" />
                   </div>
-                  <div class="carousel-item">
-                    <!-- 2a Imagem do Produto -->
-                    <div style="position: relative; left: 0; top: 0">
-                      <img
-                        src="./assets/Renders/View2/handler_default-2.png"
-                        style="z-index: 5"
-                        class="handlerDefault another-rec carouselImg confHandler w-100 rounded"
-                        alt="First slide"
-                      />
-                      <img
-                        src="./assets/Renders/View2/handler_leather-2.png"
-                        style="z-index: 5"
-                        class="d-none handlerLeather another-rec carouselImg confHandler w-100 rounded"
-                        alt="First slide"
-                      />
-                      <img
-                        src="./assets/Renders/View2/handler_modern-2.png"
-                        style="z-index: 5"
-                        class="d-none handlerModern another-rec carouselImg confHandler w-100 rounded"
-                        alt="First slide"
-                      />
-                      <img
-                        src="./assets/Renders/View2/window_wicker-2.png"
-                        style="z-index: 4"
-                        class="windowWicker another-rec carouselImg confWindow w-100 rounded"
-                        alt="First slide"
-                      />
-                      <img
-                        src="./assets/Renders/View2/window_glass-2.png"
-                        style="z-index: 4"
-                        class="d-none windowGlass another-rec carouselImg confWindow w-100 rounded"
-                        alt="First slide"
-                      />
-                      <img
-                        src="./assets/Renders/View2/top_pinho-2.png"
-                        style="z-index: 3"
-                        class="topPinho rect carouselImg confTop w-100 rounded"
-                        alt="First slide"
-                      />
-                      <img
-                        src="./assets/Renders/View2/top_plywood-2.png"
-                        style="z-index: 3"
-                        class="d-none topPlywood rect carouselImg confTop w-100 rounded"
-                        alt="First slide"
-                      />
-                      <img
-                        src="./assets/Renders/View2/top_whiteglass-2.png"
-                        style="z-index: 3"
-                        class="d-none topWhiteGlass rect carouselImg confTop w-100 rounded"
-                        alt="First slide"
-                      />
-                      <img
-                        src="./assets/Renders/View2/top_marble-2.png"
-                        style="z-index: 3"
-                        class="d-none topMarble rect carouselImg confTop w-100 rounded"
-                        alt="First slide"
-                      />
-                      <img
-                        src="./assets/Renders/View2/top_blackglass-2.png"
-                        style="z-index: 3"
-                        class="d-none topBlackGlass rect carouselImg confTop w-100 rounded"
-                        alt="First slide"
-                      />
-                      <img
-                        src="./assets/Renders/View2/rack_pinho-2.png"
-                        style="z-index: 2"
-                        class="rackPinho another-rec carouselImg confRack w-100 rounded"
-                        alt="First slide"
-                      />
-                      <img
-                        src="./assets/Renders/View2/rack_plywood-2.png"
-                        style="z-index: 2"
-                        class="d-none rackPlywood another-rec carouselImg confRack w-100 rounded"
-                        alt="First slide"
-                      />
-                      <img
-                        src="./assets/Renders/View2/feet_pinho-2.png"
-                        style="z-index: 4"
-                        class="feetPinho another-rec carouselImg confFeet w-100 rounded"
-                        alt="First slide"
-                      />
-                      <img
-                        src="./assets/Renders/View2/feet_plywood-2.png"
-                        style="z-index: 4"
-                        class="d-none-plywood feetPlywood another-rec carouselImg confFeet w-100 rounded"
-                        alt="First slide"
-                      />
-                      <img
-                        src="./assets/Renders/View2/feet_modern-2.png"
-                        style="z-index: 4"
-                        class="d-none feetModern another-rec carouselImg confFeet w-100 rounded"
-                        alt="First slide"
-                      />
-                    </div>
+                </div>
+                <div class="carousel-item">
+                  <!-- 2a Imagem do Produto -->
+                  <div style="position: relative; left: 0; top: 0">
+                    <img src="./assets/Renders/View2/handler_default-2.png" style="z-index: 5"
+                      class="handlerDefault another-rec carouselImg confHandler w-100 rounded" alt="First slide" />
+                    <img src="./assets/Renders/View2/handler_leather-2.png" style="z-index: 5"
+                      class="d-none handlerLeather another-rec carouselImg confHandler w-100 rounded"
+                      alt="First slide" />
+                    <img src="./assets/Renders/View2/handler_modern-2.png" style="z-index: 5"
+                      class="d-none handlerModern another-rec carouselImg confHandler w-100 rounded"
+                      alt="First slide" />
+                    <img src="./assets/Renders/View2/window_wicker-2.png" style="z-index: 4"
+                      class="windowWicker another-rec carouselImg confWindow w-100 rounded" alt="First slide" />
+                    <img src="./assets/Renders/View2/window_glass-2.png" style="z-index: 4"
+                      class="d-none windowGlass another-rec carouselImg confWindow w-100 rounded" alt="First slide" />
+                    <img src="./assets/Renders/View2/top_pinho-2.png" style="z-index: 3"
+                      class="topPinho rect carouselImg confTop w-100 rounded" alt="First slide" />
+                    <img src="./assets/Renders/View2/top_plywood-2.png" style="z-index: 3"
+                      class="d-none topPlywood rect carouselImg confTop w-100 rounded" alt="First slide" />
+                    <img src="./assets/Renders/View2/top_whiteglass-2.png" style="z-index: 3"
+                      class="d-none topWhiteGlass rect carouselImg confTop w-100 rounded" alt="First slide" />
+                    <img src="./assets/Renders/View2/top_marble-2.png" style="z-index: 3"
+                      class="d-none topMarble rect carouselImg confTop w-100 rounded" alt="First slide" />
+                    <img src="./assets/Renders/View2/top_blackglass-2.png" style="z-index: 3"
+                      class="d-none topBlackGlass rect carouselImg confTop w-100 rounded" alt="First slide" />
+                    <img src="./assets/Renders/View2/rack_pinho-2.png" style="z-index: 2"
+                      class="rackPinho another-rec carouselImg confRack w-100 rounded" alt="First slide" />
+                    <img src="./assets/Renders/View2/rack_plywood-2.png" style="z-index: 2"
+                      class="d-none rackPlywood another-rec carouselImg confRack w-100 rounded" alt="First slide" />
+                    <img src="./assets/Renders/View2/feet_pinho-2.png" style="z-index: 4"
+                      class="feetPinho another-rec carouselImg confFeet w-100 rounded" alt="First slide" />
+                    <img src="./assets/Renders/View2/feet_plywood-2.png" style="z-index: 4"
+                      class="d-none-plywood feetPlywood another-rec carouselImg confFeet w-100 rounded"
+                      alt="First slide" />
+                    <img src="./assets/Renders/View2/feet_modern-2.png" style="z-index: 4"
+                      class="d-none feetModern another-rec carouselImg confFeet w-100 rounded" alt="First slide" />
                   </div>
-                  <div class="carousel-item">
-                    <!-- 3a Imagem do Produto -->
-                    <div style="position: relative; left: 0; top: 0">
-                      <img
-                        src="./assets/Renders/View3/top_pinho-3.png"
-                        style="z-index: 3"
-                        class="topPinho rect carouselImg confTop w-100 rounded"
-                        alt="First slide"
-                      />
-                      <img
-                        src="./assets/Renders/View3/top_plywood-3.png"
-                        style="z-index: 3"
-                        class="d-none topPlywood rect carouselImg confTop w-100 rounded"
-                        alt="First slide"
-                      />
-                      <img
-                        src="./assets/Renders/View3/top_whiteglass-3.png"
-                        style="z-index: 3"
-                        class="d-none topWhiteGlass rect carouselImg confTop w-100 rounded"
-                        alt="First slide"
-                      />
-                      <img
-                        src="./assets/Renders/View3/top_marble-3.png"
-                        style="z-index: 3"
-                        class="d-none topMarble rect carouselImg confTop w-100 rounded"
-                        alt="First slide"
-                      />
-                      <img
-                        src="./assets/Renders/View3/top_blackglass-3.png"
-                        style="z-index: 3"
-                        class="d-none topBlackGlass rect carouselImg confTop w-100 rounded"
-                        alt="First slide"
-                      />
-                      <img
-                        src="./assets/Renders/View3/rack_pinho-3.png"
-                        style="z-index: 2"
-                        class="rackPinho another-rec carouselImg confRack w-100 rounded"
-                        alt="First slide"
-                      />
-                      <img
-                        src="./assets/Renders/View3/rack_plywood-3.png"
-                        style="z-index: 2"
-                        class="d-none rackPlywood another-rec carouselImg confRack w-100 rounded"
-                        alt="First slide"
-                      />
-                      <img
-                        src="./assets/Renders/View3/feet_pinho-3.png"
-                        style="z-index: 4"
-                        class="feetPinho another-rec carouselImg confFeet w-100 rounded"
-                        alt="First slide"
-                      />
-                      <img
-                        src="./assets/Renders/View3/feet_plywood-3.png"
-                        style="z-index: 4"
-                        class="d-none-plywood feetPlywood another-rec carouselImg confFeet w-100 rounded"
-                        alt="First slide"
-                      />
-                      <img
-                        src="./assets/Renders/View3/feet_modern-3.png"
-                        style="z-index: 4"
-                        class="d-none feetModern another-rec carouselImg confFeet w-100 rounded"
-                        alt="First slide"
-                      />
-                    </div>
+                </div>
+                <div class="carousel-item">
+                  <!-- 3a Imagem do Produto -->
+                  <div style="position: relative; left: 0; top: 0">
+                    <img src="./assets/Renders/View3/top_pinho-3.png" style="z-index: 3"
+                      class="topPinho rect carouselImg confTop w-100 rounded" alt="First slide" />
+                    <img src="./assets/Renders/View3/top_plywood-3.png" style="z-index: 3"
+                      class="d-none topPlywood rect carouselImg confTop w-100 rounded" alt="First slide" />
+                    <img src="./assets/Renders/View3/top_whiteglass-3.png" style="z-index: 3"
+                      class="d-none topWhiteGlass rect carouselImg confTop w-100 rounded" alt="First slide" />
+                    <img src="./assets/Renders/View3/top_marble-3.png" style="z-index: 3"
+                      class="d-none topMarble rect carouselImg confTop w-100 rounded" alt="First slide" />
+                    <img src="./assets/Renders/View3/top_blackglass-3.png" style="z-index: 3"
+                      class="d-none topBlackGlass rect carouselImg confTop w-100 rounded" alt="First slide" />
+                    <img src="./assets/Renders/View3/rack_pinho-3.png" style="z-index: 2"
+                      class="rackPinho another-rec carouselImg confRack w-100 rounded" alt="First slide" />
+                    <img src="./assets/Renders/View3/rack_plywood-3.png" style="z-index: 2"
+                      class="d-none rackPlywood another-rec carouselImg confRack w-100 rounded" alt="First slide" />
+                    <img src="./assets/Renders/View3/feet_pinho-3.png" style="z-index: 4"
+                      class="feetPinho another-rec carouselImg confFeet w-100 rounded" alt="First slide" />
+                    <img src="./assets/Renders/View3/feet_plywood-3.png" style="z-index: 4"
+                      class="d-none-plywood feetPlywood another-rec carouselImg confFeet w-100 rounded"
+                      alt="First slide" />
+                    <img src="./assets/Renders/View3/feet_modern-3.png" style="z-index: 4"
+                      class="d-none feetModern another-rec carouselImg confFeet w-100 rounded" alt="First slide" />
                   </div>
-                  <div class="carousel-item">
-                    <!-- 4a Imagem do Produto -->
-                    <div style="position: relative; left: 0; top: 0">
-                      <img
-                        src="./assets/Renders/View4/window_wicker-4.png"
-                        style="z-index: 4"
-                        class="windowWicker another-rec carouselImg confWindow w-100 rounded"
-                        alt="First slide"
-                      />
-                      <img
-                        src="./assets/Renders/View4/window_glass-4.png"
-                        style="z-index: 4"
-                        class="d-none windowGlass another-rec carouselImg confWindow w-100 rounded"
-                        alt="First slide"
-                      />
-                      <img
-                        src="./assets/Renders/View4/top_pinho-4.png"
-                        style="z-index: 3"
-                        class="topPinho rect carouselImg confTop w-100 rounded"
-                        alt="First slide"
-                      />
-                      <img
-                        src="./assets/Renders/View4/top_plywood-4.png"
-                        style="z-index: 3"
-                        class="d-none topPlywood rect carouselImg confTop w-100 rounded"
-                        alt="First slide"
-                      />
-                      <img
-                        src="./assets/Renders/View4/top_whiteglass-4.png"
-                        style="z-index: 3"
-                        class="d-none topWhiteGlass rect carouselImg confTop w-100 rounded"
-                        alt="First slide"
-                      />
-                      <img
-                        src="./assets/Renders/View4/top_marble-4.png"
-                        style="z-index: 3"
-                        class="d-none topMarble rect carouselImg confTop w-100 rounded"
-                        alt="First slide"
-                      />
-                      <img
-                        src="./assets/Renders/View4/top_blackglass-4.png"
-                        style="z-index: 3"
-                        class="d-none topBlackGlass rect carouselImg confTop w-100 rounded"
-                        alt="First slide"
-                      />
-                      <img
-                        src="./assets/Renders/View4/rack_pinho-4.png"
-                        style="z-index: 2"
-                        class="rackPinho another-rec carouselImg confRack w-100 rounded"
-                        alt="First slide"
-                      />
-                      <img
-                        src="./assets/Renders/View4/rack_plywood-4.png"
-                        style="z-index: 2"
-                        class="d-none rackPlywood another-rec carouselImg confRack w-100 rounded"
-                        alt="First slide"
-                      />
-                    </div>
+                </div>
+                <div class="carousel-item">
+                  <!-- 4a Imagem do Produto -->
+                  <div style="position: relative; left: 0; top: 0">
+                    <img src="./assets/Renders/View4/window_wicker-4.png" style="z-index: 4"
+                      class="windowWicker another-rec carouselImg confWindow w-100 rounded" alt="First slide" />
+                    <img src="./assets/Renders/View4/window_glass-4.png" style="z-index: 4"
+                      class="d-none windowGlass another-rec carouselImg confWindow w-100 rounded" alt="First slide" />
+                    <img src="./assets/Renders/View4/top_pinho-4.png" style="z-index: 3"
+                      class="topPinho rect carouselImg confTop w-100 rounded" alt="First slide" />
+                    <img src="./assets/Renders/View4/top_plywood-4.png" style="z-index: 3"
+                      class="d-none topPlywood rect carouselImg confTop w-100 rounded" alt="First slide" />
+                    <img src="./assets/Renders/View4/top_whiteglass-4.png" style="z-index: 3"
+                      class="d-none topWhiteGlass rect carouselImg confTop w-100 rounded" alt="First slide" />
+                    <img src="./assets/Renders/View4/top_marble-4.png" style="z-index: 3"
+                      class="d-none topMarble rect carouselImg confTop w-100 rounded" alt="First slide" />
+                    <img src="./assets/Renders/View4/top_blackglass-4.png" style="z-index: 3"
+                      class="d-none topBlackGlass rect carouselImg confTop w-100 rounded" alt="First slide" />
+                    <img src="./assets/Renders/View4/rack_pinho-4.png" style="z-index: 2"
+                      class="rackPinho another-rec carouselImg confRack w-100 rounded" alt="First slide" />
+                    <img src="./assets/Renders/View4/rack_plywood-4.png" style="z-index: 2"
+                      class="d-none rackPlywood another-rec carouselImg confRack w-100 rounded" alt="First slide" />
                   </div>
-                  <div
-                    class="carousel-item"
-                    id="canvasSize"
-                    style="height: 70vh !important"
-                  >
-                    <!-- 5a Imagem do Produto / Interface 3D -->
-                    <div class="OverlayButtons">
-                      <!-- Modo Escuro -->
-                      <button
-                        type="button"
-                        name=""
-                        id="btn_night"
-                        style="z-index: 3"
-                        class="btn btn-circle-canvas2 btn-frosted"
-                      >
-                        <img
-                          src="assets/icons/moon-stars-fill.svg"
-                          class="img-fluid"
-                          style="width: 50%; height: 50%"
-                          alt=""
-                        />
-                      </button>
-                      <!-- Ajuda -->
-                      <button
-                        type="button"
-                        name=""
-                        id="btn_help"
-                        style="z-index: 3"
-                        class="helpbtnshow btn btn-circle-canvas3 btn-frosted"
-                      >
-                        <img
-                          src="assets/icons/question-circle-fill.svg"
-                          class="img-fluid"
-                          style="width: 50%; height: 50%"
-                          alt=""
-                        />
-                      </button>
-                      <!-- Esconder/Mostrar Decoração -->
-                      <button
-                        type="button"
-                        name=""
-                        id="btn_decor"
-                        style="z-index: 3"
-                        class="btn btn-circle-canvas btn-frosted"
-                      >
-                        <img
-                          src="assets/icons/hideDecor.svg"
-                          class="img-fluid"
-                          style="width: 50%; height: 50%"
-                          alt=""
-                        />
-                      </button>
+                </div>
+                <div class="carousel-item" id="canvasSize" style="height: 70vh !important">
+                  <!-- 5a Imagem do Produto / Interface 3D -->
+                  <div class="OverlayButtons">
+                    <!-- Modo Escuro -->
+                    <button type="button" name="" id="btn_night" style="z-index: 3"
+                      class="btn btn-circle-canvas2 btn-frosted">
+                      <img src="assets/icons/moon-stars-fill.svg" class="img-fluid" style="width: 50%; height: 50%"
+                        alt="" />
+                    </button>
+                    <!-- Ajuda -->
+                    <button type="button" name="" id="btn_help" style="z-index: 3"
+                      class="helpbtnshow btn btn-circle-canvas3 btn-frosted">
+                      <img src="assets/icons/question-circle-fill.svg" class="img-fluid" style="width: 50%; height: 50%"
+                        alt="" />
+                    </button>
+                    <!-- Esconder/Mostrar Decoração -->
+                    <button type="button" name="" id="btn_decor" style="z-index: 3"
+                      class="btn btn-circle-canvas btn-frosted">
+                      <img src="assets/icons/hideDecor.svg" class="img-fluid" style="width: 50%; height: 50%" alt="" />
+                    </button>
+                  </div>
+                  <canvas id="productImage7" class="rounded"></canvas>
+                  <!-- Overlay de Ajuda -->
+                  <div class="helpCanvas p-5 bg-frosted-lgBlur d-none">
+                    <div class="row">
+                      <div class="col-12 text-center">
+                        <h4 class="pb-5"><b>Como Navegar:</b></h4>
+                      </div>
                     </div>
-                    <canvas id="productImage7" class="rounded"></canvas>
-                    <!-- Overlay de Ajuda -->
-                    <div class="helpCanvas p-5 bg-frosted-lgBlur d-none">
-                      <div class="row">
-                        <div class="col-12 text-center">
-                          <h4 class="pb-5"><b>Como Navegar:</b></h4>
+                    <div class="px-5 pb-5 row">
+                      <div class="col-2 align-items-start">
+                        <div class="mouse d-block">
+                          <svg height="60" width="20">
+                            <circle style="fill: #3e3e3e" cx="10" cy="30" r="4" />
+                          </svg>
                         </div>
                       </div>
-                      <div class="px-5 pb-5 row">
-                        <div class="col-2 align-items-start">
-                          <div class="mouse d-block">
-                            <svg height="60" width="20">
-                              <circle
-                                style="fill: #3e3e3e"
-                                cx="10"
-                                cy="30"
-                                r="4"
-                              />
-                            </svg>
-                          </div>
-                        </div>
-                        <div class="col-10 d-flex align-items-center">
-                          <h5>
-                            Mova o Rato enquanto clica no Botão Direito para
-                            orbitar em volta do objeto.
-                          </h5>
+                      <div class="col-10 d-flex align-items-center">
+                        <h5>
+                          Mova o Rato enquanto clica no Botão Direito para
+                          orbitar em volta do objeto.
+                        </h5>
+                      </div>
+                    </div>
+                    <div class="px-5 row">
+                      <div class="col-2 align-items-start">
+                        <div class="scrolldown d-block">
+                          <svg height="60" width="20">
+                            <circle class="scrolldown-p1" cx="10" cy="30" r="4" />
+                            <circle class="scrolldown-p2" cx="10" cy="30" r="4" />
+                          </svg>
                         </div>
                       </div>
-                      <div class="px-5 row">
-                        <div class="col-2 align-items-start">
-                          <div class="scrolldown d-block">
-                            <svg height="60" width="20">
-                              <circle
-                                class="scrolldown-p1"
-                                cx="10"
-                                cy="30"
-                                r="4"
-                              />
-                              <circle
-                                class="scrolldown-p2"
-                                cx="10"
-                                cy="30"
-                                r="4"
-                              />
-                            </svg>
-                          </div>
-                        </div>
-                        <div class="col-10 d-flex align-items-center">
-                          <h5>
-                            Deslize a Roda do Rato Verticalmente para
-                            Ampliar/Desampliar o Móvel.
-                          </h5>
-                        </div>
+                      <div class="col-10 d-flex align-items-center">
+                        <h5>
+                          Deslize a Roda do Rato Verticalmente para
+                          Ampliar/Desampliar o Móvel.
+                        </h5>
                       </div>
-                      <div class="row">
-                        <div class="col-12 text-center">
-                          <button
-                            type="button"
-                            name=""
-                            id="helpbtnhide"
-                            class="mt-4 helpbtn btn btn-dark"
-                          >
-                            Sair da Ajuda
-                          </button>
-                        </div>
+                    </div>
+                    <div class="row">
+                      <div class="col-12 text-center">
+                        <button type="button" name="" id="helpbtnhide" class="mt-4 helpbtn btn btn-dark">
+                          Sair da Ajuda
+                        </button>
                       </div>
                     </div>
                   </div>
                 </div>
-                <!-- Previous Slide -->
-                <button
-                  style="z-index: 999"
-                  class="carousel-control-prev"
-                  type="button"
-                  data-bs-target="#galeria"
-                  data-bs-slide="prev"
-                >
-                  <span
-                    class="carousel-control-prev-icon"
-                    aria-hidden="true"
-                  ></span>
+              </div>
+              <!-- Previous Slide -->
+              <button style="z-index: 999" class="carousel-control-prev" type="button" data-bs-target="#galeria"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              </button>
+              <!-- Next Slide -->
+              <button style="z-index: 999" class="carousel-control-next" type="button" data-bs-target="#galeria"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              </button>
+            </div>
+          </div>
+          <!-- Botão de Realidade Aumentada -->
+          <div class="row justify-content-center align-items-center">
+            <div class="col pt-2 px-5 ar d-none">
+              <ar-button class="d-md-none"
+                src="https://github.com/JoaoFranco03/joaofranco03.github.io/blob/main/assets/3DModels/AR_Android.gltf?raw=true"
+                ios-src="https://github.com/JoaoFranco03/joaofranco03.github.io/blob/main/assets/3DModels/AR_iOS.usdz?raw=true"
+                title="GABIN - Móvel de TV">
+                Ver na Sua Sala
+              </ar-button>
+            </div>
+          </div>
+          <!-- Mudanças de Vista -->
+          <div class="views d-none text-center overflow-auto my-0 ps-2 px-md-0"
+            style="padding-top: 15px; overflow-x: auto">
+            <div class="btn-group" role="group" aria-label="Basic example">
+              <a name="" id="btn_frontView" class="btn btn-secondary" role="button">
+                Vista Frontal
+              </a>
+              <div class="alert alert-dark m-0 px-0"></div>
+              <a name="" id="btn_backView" class="btn btn-secondary" role="button">
+                Vista Trás
+              </a>
+              <div class="alert alert-dark m-0 px-0"></div>
+              <a name="" id="btn_topView" class="btn btn-secondary" role="button">
+                Vista Topo
+              </a>
+              <div class="alert alert-dark m-0 px-0"></div>
+              <a name="" id="btn_downView" class="btn btn-secondary" role="button">
+                Vista Baixo
+              </a>
+              <div class="alert alert-dark m-0 px-0"></div>
+              <a name="" id="btn_rightView" class="btn btn-secondary" role="button">
+                Vista Direita
+              </a>
+              <div class="alert alert-dark m-0 px-0"></div>
+              <a name="" id="btn_leftView" class="btn btn-secondary" role="button">
+                Vista Esquerda
+              </a>
+            </div>
+          </div>
+          <!-- Butões de Controlo do Carousel -->
+          <div class="row d-block px-4 px-md-0 py-3 text-nowrap overflow-auto">
+            <!-- Botão1 -->
+            <button type="button" id="productImage1Btn" data-bs-slide-to="0" data-bs-target="#galeria"
+              class="btn bg-light-subtle btn-preview me-2 border-light-subtle">
+              <div class="w-100 h-100" style="position: relative; left: 0; top: 0; object-fit: cover">
+                <img src="./assets/Renders/View1/handler_default-1.png" style="z-index: 5"
+                  class="handlerDefault another-rec confHandler w-100 h-100 rounded" style="object-fit: fill"
+                  alt="First slide" />
+                <img src="./assets/Renders/View1/handler_leather-1.png" style="z-index: 5"
+                  class="d-none handlerLeather another-rec confHandler w-100 h-100 rounded" style="object-fit: fill"
+                  alt="First slide" />
+                <img src="./assets/Renders/View1/handler_modern-1.png" style="z-index: 5"
+                  class="d-none handlerModern another-rec confHandler w-100 h-100 rounded" style="object-fit: fill"
+                  alt="First slide" />
+                <img src="./assets/Renders/View1/window_wicker-1.png" style="z-index: 4"
+                  class="windowWicker another-rec confWindow w-100 h-100 rounded" style="object-fit: fill"
+                  alt="First slide" />
+                <img src="./assets/Renders/View1/window_glass-1.png" style="z-index: 4"
+                  class="d-none windowGlass another-rec confWindow w-100 h-100 rounded" style="object-fit: fill"
+                  alt="First slide" />
+                <img src="./assets/Renders/View1/top_pinho-1.png" style="z-index: 3"
+                  class="topPinho rect confTop w-100 h-100 rounded" style="object-fit: fill" alt="First slide" />
+                <img src="./assets/Renders/View1/top_plywood-1.png" style="z-index: 3"
+                  class="d-none topPlywood rect confTop w-100 h-100 rounded" style="object-fit: fill"
+                  alt="First slide" />
+                <img src="./assets/Renders/View1/top_whiteglass-1.png" style="z-index: 3"
+                  class="d-none topWhiteGlass rect confTop w-100 h-100 rounded" style="object-fit: fill"
+                  alt="First slide" />
+                <img src="./assets/Renders/View1/top_marble-1.png" style="z-index: 3"
+                  class="d-none topMarble rect confTop w-100 h-100 rounded" style="object-fit: fill"
+                  alt="First slide" />
+                <img src="./assets/Renders/View1/top_blackglass-1.png" style="z-index: 3"
+                  class="d-none topBlackGlass rect confTop w-100 h-100 rounded" style="object-fit: fill"
+                  alt="First slide" />
+                <img src="./assets/Renders/View1/rack_pinho-1.png" style="z-index: 2"
+                  class="rackPinho another-rec confRack w-100 h-100 rounded" style="object-fit: fill"
+                  alt="First slide" />
+                <img src="./assets/Renders/View1/rack_plywood-1.png" style="z-index: 2"
+                  class="d-none rackPlywood another-rec confRack w-100 h-100 rounded" style="object-fit: fill"
+                  alt="First slide" />
+                <img src="./assets/Renders/View1/feet_pinho-1.png" style="z-index: 4"
+                  class="feetPinho another-rec confFeet w-100 h-100 rounded" style="object-fit: fill"
+                  alt="First slide" />
+                <img src="./assets/Renders/View1/feet_plywood-1.png" style="z-index: 4"
+                  class="d-none-plywood feetPlywood another-rec confFeet w-100 h-100 rounded" style="object-fit: fill"
+                  alt="First slide" />
+                <img src="./assets/Renders/View1/feet_modern-1.png" style="z-index: 4"
+                  class="d-none feetModern another-rec confFeet w-100 h-100 rounded" style="object-fit: fill"
+                  alt="First slide" />
+              </div>
+            </button>
+            <!-- Botão2 -->
+            <button id="productImage2Btn" type="button" data-bs-slide-to="1" data-bs-target="#galeria"
+              class="btn bg-light-subtle btn-preview me-2 border-light-subtle">
+              <div class="w-100 h-100" style="position: relative; left: 0; top: 0; object-fit: cover">
+                <img src="./assets/Renders/View2/handler_default-2.png" style="z-index: 5"
+                  class="handlerDefault another-rec confHandler w-100 h-100 rounded" style="object-fit: fill"
+                  alt="First slide" />
+                <img src="./assets/Renders/View2/handler_leather-2.png" style="z-index: 5"
+                  class="d-none handlerLeather another-rec confHandler w-100 h-100 rounded" style="object-fit: fill"
+                  alt="First slide" />
+                <img src="./assets/Renders/View2/handler_modern-2.png" style="z-index: 5"
+                  class="d-none handlerModern another-rec confHandler w-100 h-100 rounded" style="object-fit: fill"
+                  alt="First slide" />
+                <img src="./assets/Renders/View2/window_wicker-2.png" style="z-index: 4"
+                  class="windowWicker another-rec confWindow w-100 h-100 rounded" style="object-fit: fill"
+                  alt="First slide" />
+                <img src="./assets/Renders/View2/window_glass-2.png" style="z-index: 4"
+                  class="d-none windowGlass another-rec confWindow w-100 h-100 rounded" style="object-fit: fill"
+                  alt="First slide" />
+                <img src="./assets/Renders/View2/top_pinho-2.png" style="z-index: 3"
+                  class="topPinho rect confTop w-100 h-100 rounded" style="object-fit: fill" alt="First slide" />
+                <img src="./assets/Renders/View2/top_plywood-2.png" style="z-index: 3"
+                  class="d-none topPlywood rect confTop w-100 h-100 rounded" style="object-fit: fill"
+                  alt="First slide" />
+                <img src="./assets/Renders/View2/top_whiteglass-2.png" style="z-index: 3"
+                  class="d-none topWhiteGlass rect confTop w-100 h-100 rounded" style="object-fit: fill"
+                  alt="First slide" />
+                <img src="./assets/Renders/View2/top_marble-2.png" style="z-index: 3"
+                  class="d-none topMarble rect confTop w-100 h-100 rounded" style="object-fit: fill"
+                  alt="First slide" />
+                <img src="./assets/Renders/View2/top_blackglass-2.png" style="z-index: 3"
+                  class="d-none topBlackGlass rect confTop w-100 h-100 rounded" style="object-fit: fill"
+                  alt="First slide" />
+                <img src="./assets/Renders/View2/rack_pinho-2.png" style="z-index: 2"
+                  class="rackPinho another-rec confRack w-100 h-100 rounded" style="object-fit: fill"
+                  alt="First slide" />
+                <img src="./assets/Renders/View2/rack_plywood-2.png" style="z-index: 2"
+                  class="d-none rackPlywood another-rec confRack w-100 h-100 rounded" style="object-fit: fill"
+                  alt="First slide" />
+                <img src="./assets/Renders/View2/feet_pinho-2.png" style="z-index: 4"
+                  class="feetPinho another-rec confFeet w-100 h-100 rounded" style="object-fit: fill"
+                  alt="First slide" />
+                <img src="./assets/Renders/View2/feet_plywood-2.png" style="z-index: 4"
+                  class="d-none-plywood feetPlywood another-rec confFeet w-100 h-100 rounded" style="object-fit: fill"
+                  alt="First slide" />
+                <img src="./assets/Renders/View2/feet_modern-2.png" style="z-index: 4"
+                  class="d-none feetModern another-rec confFeet w-100 h-100 rounded" style="object-fit: fill"
+                  alt="First slide" />
+              </div>
+            </button>
+            <!-- Botão3 -->
+            <button type="button" id="productImage3Btn" data-bs-slide-to="2" data-bs-target="#galeria"
+              class="btn bg-light-subtle btn-preview me-2 border-light-subtle">
+              <div class="w-100 h-100" style="position: relative; left: 0; top: 0; object-fit: cover">
+                <img src="./assets/Renders/View3/top_pinho-3.png" style="z-index: 3"
+                  class="topPinho rect confTop w-100 h-100 rounded" style="object-fit: fill" alt="First slide" />
+                <img src="./assets/Renders/View3/top_plywood-3.png" style="z-index: 3"
+                  class="d-none topPlywood rect confTop w-100 h-100 rounded" style="object-fit: fill"
+                  alt="First slide" />
+                <img src="./assets/Renders/View3/top_whiteglass-3.png" style="z-index: 3"
+                  class="d-none topWhiteGlass rect confTop w-100 h-100 rounded" style="object-fit: fill"
+                  alt="First slide" />
+                <img src="./assets/Renders/View3/top_marble-3.png" style="z-index: 3"
+                  class="d-none topMarble rect confTop w-100 h-100 rounded" style="object-fit: fill"
+                  alt="First slide" />
+                <img src="./assets/Renders/View3/top_blackglass-3.png" style="z-index: 3"
+                  class="d-none topBlackGlass rect confTop w-100 h-100 rounded" style="object-fit: fill"
+                  alt="First slide" />
+                <img src="./assets/Renders/View3/rack_pinho-3.png" style="z-index: 2"
+                  class="rackPinho another-rec confRack w-100 h-100 rounded" style="object-fit: fill"
+                  alt="First slide" />
+                <img src="./assets/Renders/View3/rack_plywood-3.png" style="z-index: 2"
+                  class="d-none rackPlywood another-rec confRack w-100 h-100 rounded" style="object-fit: fill"
+                  alt="First slide" />
+                <img src="./assets/Renders/View3/feet_pinho-3.png" style="z-index: 4"
+                  class="feetPinho another-rec confFeet w-100 h-100 rounded" style="object-fit: fill"
+                  alt="First slide" />
+                <img src="./assets/Renders/View3/feet_plywood-3.png" style="z-index: 4"
+                  class="d-none-plywood feetPlywood another-rec confFeet w-100 h-100 rounded" style="object-fit: fill"
+                  alt="First slide" />
+                <img src="./assets/Renders/View3/feet_modern-3.png" style="z-index: 4"
+                  class="d-none feetModern another-rec confFeet w-100 h-100 rounded" style="object-fit: fill"
+                  alt="First slide" />
+              </div>
+            </button>
+            <!-- Botão4 -->
+            <button type="button" id="productImage4Btn" data-bs-slide-to="3" data-bs-target="#galeria"
+              class="btn bg-light-subtle btn-preview me-2 border-light-subtle">
+              <div class="w-100 h-100" style="position: relative; left: 0; top: 0; object-fit: cover">
+                <img src="./assets/Renders/View4/window_wicker-4.png" style="z-index: 4"
+                  class="windowWicker another-rec confWindow w-100 h-100 rounded" style="object-fit: fill"
+                  alt="First slide" />
+                <img src="./assets/Renders/View4/window_glass-4.png" style="z-index: 4"
+                  class="d-none windowGlass another-rec confWindow w-100 h-100 rounded" style="object-fit: fill"
+                  alt="First slide" />
+                <img src="./assets/Renders/View4/top_pinho-4.png" style="z-index: 3"
+                  class="topPinho rect confTop w-100 h-100 rounded" style="object-fit: fill" alt="First slide" />
+                <img src="./assets/Renders/View4/top_plywood-4.png" style="z-index: 3"
+                  class="d-none topPlywood rect confTop w-100 h-100 rounded" style="object-fit: fill"
+                  alt="First slide" />
+                <img src="./assets/Renders/View4/top_whiteglass-4.png" style="z-index: 3"
+                  class="d-none topWhiteGlass rect confTop w-100 h-100 rounded" style="object-fit: fill"
+                  alt="First slide" />
+                <img src="./assets/Renders/View4/top_marble-4.png" style="z-index: 3"
+                  class="d-none topMarble rect confTop w-100 h-100 rounded" style="object-fit: fill"
+                  alt="First slide" />
+                <img src="./assets/Renders/View4/top_blackglass-4.png" style="z-index: 3"
+                  class="d-none topBlackGlass rect confTop w-100 h-100 rounded" style="object-fit: fill"
+                  alt="First slide" />
+                <img src="./assets/Renders/View4/rack_pinho-4.png" style="z-index: 2"
+                  class="rackPinho another-rec confRack w-100 h-100 rounded" style="object-fit: fill"
+                  alt="First slide" />
+                <img src="./assets/Renders/View4/rack_plywood-4.png" style="z-index: 2"
+                  class="d-none rackPlywood another-rec confRack w-100 h-100 rounded" style="object-fit: fill"
+                  alt="First slide" />
+              </div>
+            </button>
+            <!-- Botão5 -->
+            <button type="button" id="productImage6Btn" data-bs-slide-to="4" data-bs-target="#galeria"
+              class="btn bg-light-subtle btn-preview me-2 border-light-subtle">
+              <img src="./assets/icons/3d.svg" class="w-100 h-100 p-2" alt="" />
+            </button>
+          </div>
+        </div>
+      </div>
+      <!-- Informações e Configurações do Produto -->
+      <div class="col-12 col-md-4 px-5 pt-3">
+        <p class="my-0">
+          <i class="bi bi-star-fill pe-1"></i><i class="bi bi-star-fill pe-1"></i><i class="bi bi-star-fill pe-1"></i><i
+            class="bi bi-star-fill pe-1"></i><i class="bi bi-star-fill pe-1"></i>(3)
+        </p>
+        <div class="d-flex mt-2 justify-content-between">
+          <!-- Nome do Produto -->
+          <h4><b>GABIN</b></h4>
+          <!-- Preço do Produto -->
+          <div class="flex-end">
+            <h5 class="mb-1">€ 580.50 EUR</h5>
+            <p class="text-danger text-end m-0"><del>€ 645.90 EUR</del></p>
+          </div>
+        </div>
+        <!-- Configurador -->
+        <div class="accordion accordion-flush" id="configAccordion">
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="topHeading">
+              <button class="px-1 accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#topCollapse" aria-expanded="false" aria-controls="topCollapse">
+                <p class="py-0 my-0" id="tampo"><b>TAMPO:</b>&nbsp;Pinho</p>
+              </button>
+            </h2>
+            <div id="topCollapse" class="accordion-collapse collapse" aria-labelledby="topHeading"
+              data-bs-parent="#configAccordion">
+              <div class="accordion-body">
+                <button id="btn_top_pinho" class="btn btn-circle text-center btn-circle-active tampoSection"
+                  role="button">
+                  <img src="assets/Materials/Woods/Pinho/Wood028_2K_Color.png" class="img-fluid w-100 btn-circle-img"
+                    alt="" />
                 </button>
-                <!-- Next Slide -->
-                <button
-                  style="z-index: 999"
-                  class="carousel-control-next"
-                  type="button"
-                  data-bs-target="#galeria"
-                  data-bs-slide="next"
-                >
-                  <span
-                    class="carousel-control-next-icon"
-                    aria-hidden="true"
-                  ></span>
+                <button id="btn_top_marble" class="btn btn-circle text-center tampoSection" role="button">
+                  <img src="assets/Materials/Stone/Marble/marblebtn.jpg" class="img-fluid w-100 btn-circle-img"
+                    alt="" />
+                </button>
+                <button id="btn_top_whiteGlass" class="btn btn-circle text-center tampoSection" role="button">
+                  <img src="assets/Materials/Glass/WhiteGlass.jpg" class="img-fluid w-100 btn-circle-img" alt="" />
+                </button>
+                <button id="btn_top_darkGlass" class="btn btn-circle text-center tampoSection" role="button">
+                  <img src="assets/Materials/Glass/DarkGlass.jpg" class="img-fluid w-100 btn-circle-img" alt="" />
+                </button>
+                <button id="btn_top_plywood" class="btn btn-circle text-center tampoSection" role="button">
+                  <img src="assets/Materials/Woods/Plywood/Wood_Plywood_Front_001_basecolor.jpg"
+                    class="img-fluid w-100 btn-circle-img" alt="" />
                 </button>
               </div>
             </div>
-            <!-- Botão de Realidade Aumentada -->
-            <div class="row justify-content-center align-items-center">
-              <div class="col pt-2 px-5 ar d-none">
-                <ar-button
-                  class="d-md-none"
-                  src="https://github.com/JoaoFranco03/joaofranco03.github.io/blob/main/assets/3DModels/AR_Android.gltf?raw=true"
-                  ios-src="https://github.com/JoaoFranco03/joaofranco03.github.io/blob/main/assets/3DModels/AR_iOS.usdz?raw=true"
-                  title="GABIN - Móvel de TV"
-                >
-                  Ver na Sua Sala
-                </ar-button>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="woodHeading">
+              <button class="px-1 accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#woodCollapse" aria-expanded="false" aria-controls="woodCollapse">
+                <p class="py-0 my-0" id="wood"><b>MADEIRA:</b> Pinho</p>
+              </button>
+            </h2>
+            <div id="woodCollapse" class="accordion-collapse collapse" aria-labelledby="woodHeading"
+              data-bs-parent="#configAccordion">
+              <div class="accordion-body">
+                <button id="btn_pinho" class="btn btn-circle text-center btn-circle-active woodSection" role="button">
+                  <img src="assets/Materials/Woods/Pinho/Wood028_2K_Color.png" class="img-fluid w-100 btn-circle-img"
+                    alt="" />
+                </button>
+                <button id="btn_plywood" class="btn btn-circle text-center woodSection" role="button">
+                  <img src="assets/Materials/Woods/Plywood/Wood_Plywood_Front_001_basecolor.jpg"
+                    class="img-fluid w-100 btn-circle-img" alt="" />
+                </button>
               </div>
             </div>
-            <!-- Mudanças de Vista -->
-            <div
-              class="views d-none text-center overflow-auto my-0 ps-2 px-md-0"
-              style="padding-top: 15px; overflow-x: auto"
-            >
-              <div class="btn-group" role="group" aria-label="Basic example">
-                <a
-                  name=""
-                  id="btn_frontView"
-                  class="btn btn-secondary"
-                  role="button"
-                >
-                  Vista Frontal
-                </a>
-                <div class="alert alert-dark m-0 px-0"></div>
-                <a
-                  name=""
-                  id="btn_backView"
-                  class="btn btn-secondary"
-                  role="button"
-                >
-                  Vista Trás
-                </a>
-                <div class="alert alert-dark m-0 px-0"></div>
-                <a
-                  name=""
-                  id="btn_topView"
-                  class="btn btn-secondary"
-                  role="button"
-                >
-                  Vista Topo
-                </a>
-                <div class="alert alert-dark m-0 px-0"></div>
-                <a
-                  name=""
-                  id="btn_downView"
-                  class="btn btn-secondary"
-                  role="button"
-                >
-                  Vista Baixo
-                </a>
-                <div class="alert alert-dark m-0 px-0"></div>
-                <a
-                  name=""
-                  id="btn_rightView"
-                  class="btn btn-secondary"
-                  role="button"
-                >
-                  Vista Direita
-                </a>
-                <div class="alert alert-dark m-0 px-0"></div>
-                <a
-                  name=""
-                  id="btn_leftView"
-                  class="btn btn-secondary"
-                  role="button"
-                >
-                  Vista Esquerda
-                </a>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="windowHeading">
+              <button class="px-1 accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#windowCollapse" aria-expanded="false" aria-controls="windowCollapse">
+                <p class="py-0 my-0" id="window"><b>JANELA:</b> Vime</p>
+              </button>
+            </h2>
+            <div id="windowCollapse" class="accordion-collapse collapse" aria-labelledby="windowHeading"
+              data-bs-parent="#configAccordion">
+              <div class="accordion-body">
+                <button id="btn_window_wicker" class="btn btn-circle text-center btn-circle-active doorSection"
+                  role="button">
+                  <img src="assets/Materials/Woods/DoorDetail/Wood_Wicker_010_basecolor.jpg"
+                    class="img-fluid w-100 btn-circle-img" alt="" />
+                </button>
+                <button id="btn_window_glass" class="btn btn-circle text-center doorSection" role="button">
+                  <img src="assets/Materials/Glass/LightBlueGlass.jpg" class="img-fluid w-100 btn-circle-img" alt="" />
+                </button>
               </div>
             </div>
-            <!-- Butões de Controlo do Carousel -->
-            <div
-              class="row d-block px-4 px-md-0 py-3 text-nowrap overflow-auto"
-            >
-              <!-- Botão1 -->
-              <button
-                type="button"
-                id="productImage1Btn"
-                data-bs-slide-to="0"
-                data-bs-target="#galeria"
-                class="btn bg-light-subtle btn-preview me-2 border-light-subtle"
-              >
-                <div
-                  class="w-100 h-100"
-                  style="position: relative; left: 0; top: 0; object-fit: cover"
-                >
-                  <img
-                    src="./assets/Renders/View1/handler_default-1.png"
-                    style="z-index: 5"
-                    class="handlerDefault another-rec confHandler w-100 h-100 rounded"
-                    style="object-fit: fill"
-                    alt="First slide"
-                  />
-                  <img
-                    src="./assets/Renders/View1/handler_leather-1.png"
-                    style="z-index: 5"
-                    class="d-none handlerLeather another-rec confHandler w-100 h-100 rounded"
-                    style="object-fit: fill"
-                    alt="First slide"
-                  />
-                  <img
-                    src="./assets/Renders/View1/handler_modern-1.png"
-                    style="z-index: 5"
-                    class="d-none handlerModern another-rec confHandler w-100 h-100 rounded"
-                    style="object-fit: fill"
-                    alt="First slide"
-                  />
-                  <img
-                    src="./assets/Renders/View1/window_wicker-1.png"
-                    style="z-index: 4"
-                    class="windowWicker another-rec confWindow w-100 h-100 rounded"
-                    style="object-fit: fill"
-                    alt="First slide"
-                  />
-                  <img
-                    src="./assets/Renders/View1/window_glass-1.png"
-                    style="z-index: 4"
-                    class="d-none windowGlass another-rec confWindow w-100 h-100 rounded"
-                    style="object-fit: fill"
-                    alt="First slide"
-                  />
-                  <img
-                    src="./assets/Renders/View1/top_pinho-1.png"
-                    style="z-index: 3"
-                    class="topPinho rect confTop w-100 h-100 rounded"
-                    style="object-fit: fill"
-                    alt="First slide"
-                  />
-                  <img
-                    src="./assets/Renders/View1/top_plywood-1.png"
-                    style="z-index: 3"
-                    class="d-none topPlywood rect confTop w-100 h-100 rounded"
-                    style="object-fit: fill"
-                    alt="First slide"
-                  />
-                  <img
-                    src="./assets/Renders/View1/top_whiteglass-1.png"
-                    style="z-index: 3"
-                    class="d-none topWhiteGlass rect confTop w-100 h-100 rounded"
-                    style="object-fit: fill"
-                    alt="First slide"
-                  />
-                  <img
-                    src="./assets/Renders/View1/top_marble-1.png"
-                    style="z-index: 3"
-                    class="d-none topMarble rect confTop w-100 h-100 rounded"
-                    style="object-fit: fill"
-                    alt="First slide"
-                  />
-                  <img
-                    src="./assets/Renders/View1/top_blackglass-1.png"
-                    style="z-index: 3"
-                    class="d-none topBlackGlass rect confTop w-100 h-100 rounded"
-                    style="object-fit: fill"
-                    alt="First slide"
-                  />
-                  <img
-                    src="./assets/Renders/View1/rack_pinho-1.png"
-                    style="z-index: 2"
-                    class="rackPinho another-rec confRack w-100 h-100 rounded"
-                    style="object-fit: fill"
-                    alt="First slide"
-                  />
-                  <img
-                    src="./assets/Renders/View1/rack_plywood-1.png"
-                    style="z-index: 2"
-                    class="d-none rackPlywood another-rec confRack w-100 h-100 rounded"
-                    style="object-fit: fill"
-                    alt="First slide"
-                  />
-                  <img
-                    src="./assets/Renders/View1/feet_pinho-1.png"
-                    style="z-index: 4"
-                    class="feetPinho another-rec confFeet w-100 h-100 rounded"
-                    style="object-fit: fill"
-                    alt="First slide"
-                  />
-                  <img
-                    src="./assets/Renders/View1/feet_plywood-1.png"
-                    style="z-index: 4"
-                    class="d-none-plywood feetPlywood another-rec confFeet w-100 h-100 rounded"
-                    style="object-fit: fill"
-                    alt="First slide"
-                  />
-                  <img
-                    src="./assets/Renders/View1/feet_modern-1.png"
-                    style="z-index: 4"
-                    class="d-none feetModern another-rec confFeet w-100 h-100 rounded"
-                    style="object-fit: fill"
-                    alt="First slide"
-                  />
-                </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="PullerHeading">
+              <button class="px-1 accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#pullerCollapse" aria-expanded="false" aria-controls="pullerCollapse">
+                <p class="py-0 my-0" id="puxador"><b>PUXADOR:</b> Clássico</p>
               </button>
-              <!-- Botão2 -->
-              <button
-                id="productImage2Btn"
-                type="button"
-                data-bs-slide-to="1"
-                data-bs-target="#galeria"
-                class="btn bg-light-subtle btn-preview me-2 border-light-subtle"
-              >
-                <div
-                  class="w-100 h-100"
-                  style="position: relative; left: 0; top: 0; object-fit: cover"
-                >
-                  <img
-                    src="./assets/Renders/View2/handler_default-2.png"
-                    style="z-index: 5"
-                    class="handlerDefault another-rec confHandler w-100 h-100 rounded"
-                    style="object-fit: fill"
-                    alt="First slide"
-                  />
-                  <img
-                    src="./assets/Renders/View2/handler_leather-2.png"
-                    style="z-index: 5"
-                    class="d-none handlerLeather another-rec confHandler w-100 h-100 rounded"
-                    style="object-fit: fill"
-                    alt="First slide"
-                  />
-                  <img
-                    src="./assets/Renders/View2/handler_modern-2.png"
-                    style="z-index: 5"
-                    class="d-none handlerModern another-rec confHandler w-100 h-100 rounded"
-                    style="object-fit: fill"
-                    alt="First slide"
-                  />
-                  <img
-                    src="./assets/Renders/View2/window_wicker-2.png"
-                    style="z-index: 4"
-                    class="windowWicker another-rec confWindow w-100 h-100 rounded"
-                    style="object-fit: fill"
-                    alt="First slide"
-                  />
-                  <img
-                    src="./assets/Renders/View2/window_glass-2.png"
-                    style="z-index: 4"
-                    class="d-none windowGlass another-rec confWindow w-100 h-100 rounded"
-                    style="object-fit: fill"
-                    alt="First slide"
-                  />
-                  <img
-                    src="./assets/Renders/View2/top_pinho-2.png"
-                    style="z-index: 3"
-                    class="topPinho rect confTop w-100 h-100 rounded"
-                    style="object-fit: fill"
-                    alt="First slide"
-                  />
-                  <img
-                    src="./assets/Renders/View2/top_plywood-2.png"
-                    style="z-index: 3"
-                    class="d-none topPlywood rect confTop w-100 h-100 rounded"
-                    style="object-fit: fill"
-                    alt="First slide"
-                  />
-                  <img
-                    src="./assets/Renders/View2/top_whiteglass-2.png"
-                    style="z-index: 3"
-                    class="d-none topWhiteGlass rect confTop w-100 h-100 rounded"
-                    style="object-fit: fill"
-                    alt="First slide"
-                  />
-                  <img
-                    src="./assets/Renders/View2/top_marble-2.png"
-                    style="z-index: 3"
-                    class="d-none topMarble rect confTop w-100 h-100 rounded"
-                    style="object-fit: fill"
-                    alt="First slide"
-                  />
-                  <img
-                    src="./assets/Renders/View2/top_blackglass-2.png"
-                    style="z-index: 3"
-                    class="d-none topBlackGlass rect confTop w-100 h-100 rounded"
-                    style="object-fit: fill"
-                    alt="First slide"
-                  />
-                  <img
-                    src="./assets/Renders/View2/rack_pinho-2.png"
-                    style="z-index: 2"
-                    class="rackPinho another-rec confRack w-100 h-100 rounded"
-                    style="object-fit: fill"
-                    alt="First slide"
-                  />
-                  <img
-                    src="./assets/Renders/View2/rack_plywood-2.png"
-                    style="z-index: 2"
-                    class="d-none rackPlywood another-rec confRack w-100 h-100 rounded"
-                    style="object-fit: fill"
-                    alt="First slide"
-                  />
-                  <img
-                    src="./assets/Renders/View2/feet_pinho-2.png"
-                    style="z-index: 4"
-                    class="feetPinho another-rec confFeet w-100 h-100 rounded"
-                    style="object-fit: fill"
-                    alt="First slide"
-                  />
-                  <img
-                    src="./assets/Renders/View2/feet_plywood-2.png"
-                    style="z-index: 4"
-                    class="d-none-plywood feetPlywood another-rec confFeet w-100 h-100 rounded"
-                    style="object-fit: fill"
-                    alt="First slide"
-                  />
-                  <img
-                    src="./assets/Renders/View2/feet_modern-2.png"
-                    style="z-index: 4"
-                    class="d-none feetModern another-rec confFeet w-100 h-100 rounded"
-                    style="object-fit: fill"
-                    alt="First slide"
-                  />
-                </div>
+            </h2>
+            <div id="pullerCollapse" class="accordion-collapse collapse" aria-labelledby="PullerHeading"
+              data-bs-parent="#configAccordion">
+              <div class="accordion-body">
+                <button id="btn_handler_classic" class="btn btn-circle text-center btn-circle-active handlerSection"
+                  role="button">
+                  <img src="assets/PullerTextures/Classic.png" class="img-fluid w-100 btn-circle-img" alt="" />
+                </button>
+                <button id="btn_handler_modern" class="btn btn-circle text-center handlerSection" role="button">
+                  <img src="assets/PullerTextures/Modern.png" class="img-fluid w-100 btn-circle-img" alt="" />
+                </button>
+                <button id="btn_handler_leather" class="btn btn-circle text-center handlerSection" role="button">
+                  <img src="assets/PullerTextures/Leather.png" class="img-fluid w-100 btn-circle-img" alt="" />
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="accordion-item">
+            <h2 class="accordion-header" id="feetHeading">
+              <button class="px-1 accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#featCollapse" aria-expanded="false" aria-controls="featCollapse">
+                <p class="py-0 my-0" id="feet"><b>PÉS:</b> Integrados</p>
               </button>
-              <!-- Botão3 -->
-              <button
-                type="button"
-                id="productImage3Btn"
-                data-bs-slide-to="2"
-                data-bs-target="#galeria"
-                class="btn bg-light-subtle btn-preview me-2 border-light-subtle"
-              >
-                <div
-                  class="w-100 h-100"
-                  style="position: relative; left: 0; top: 0; object-fit: cover"
-                >
-                  <img
-                    src="./assets/Renders/View3/top_pinho-3.png"
-                    style="z-index: 3"
-                    class="topPinho rect confTop w-100 h-100 rounded"
-                    style="object-fit: fill"
-                    alt="First slide"
-                  />
-                  <img
-                    src="./assets/Renders/View3/top_plywood-3.png"
-                    style="z-index: 3"
-                    class="d-none topPlywood rect confTop w-100 h-100 rounded"
-                    style="object-fit: fill"
-                    alt="First slide"
-                  />
-                  <img
-                    src="./assets/Renders/View3/top_whiteglass-3.png"
-                    style="z-index: 3"
-                    class="d-none topWhiteGlass rect confTop w-100 h-100 rounded"
-                    style="object-fit: fill"
-                    alt="First slide"
-                  />
-                  <img
-                    src="./assets/Renders/View3/top_marble-3.png"
-                    style="z-index: 3"
-                    class="d-none topMarble rect confTop w-100 h-100 rounded"
-                    style="object-fit: fill"
-                    alt="First slide"
-                  />
-                  <img
-                    src="./assets/Renders/View3/top_blackglass-3.png"
-                    style="z-index: 3"
-                    class="d-none topBlackGlass rect confTop w-100 h-100 rounded"
-                    style="object-fit: fill"
-                    alt="First slide"
-                  />
-                  <img
-                    src="./assets/Renders/View3/rack_pinho-3.png"
-                    style="z-index: 2"
-                    class="rackPinho another-rec confRack w-100 h-100 rounded"
-                    style="object-fit: fill"
-                    alt="First slide"
-                  />
-                  <img
-                    src="./assets/Renders/View3/rack_plywood-3.png"
-                    style="z-index: 2"
-                    class="d-none rackPlywood another-rec confRack w-100 h-100 rounded"
-                    style="object-fit: fill"
-                    alt="First slide"
-                  />
-                  <img
-                    src="./assets/Renders/View3/feet_pinho-3.png"
-                    style="z-index: 4"
-                    class="feetPinho another-rec confFeet w-100 h-100 rounded"
-                    style="object-fit: fill"
-                    alt="First slide"
-                  />
-                  <img
-                    src="./assets/Renders/View3/feet_plywood-3.png"
-                    style="z-index: 4"
-                    class="d-none-plywood feetPlywood another-rec confFeet w-100 h-100 rounded"
-                    style="object-fit: fill"
-                    alt="First slide"
-                  />
-                  <img
-                    src="./assets/Renders/View3/feet_modern-3.png"
-                    style="z-index: 4"
-                    class="d-none feetModern another-rec confFeet w-100 h-100 rounded"
-                    style="object-fit: fill"
-                    alt="First slide"
-                  />
-                </div>
-              </button>
-              <!-- Botão4 -->
-              <button
-                type="button"
-                id="productImage4Btn"
-                data-bs-slide-to="3"
-                data-bs-target="#galeria"
-                class="btn bg-light-subtle btn-preview me-2 border-light-subtle"
-              >
-                <div
-                  class="w-100 h-100"
-                  style="position: relative; left: 0; top: 0; object-fit: cover"
-                >
-                  <img
-                    src="./assets/Renders/View4/window_wicker-4.png"
-                    style="z-index: 4"
-                    class="windowWicker another-rec confWindow w-100 h-100 rounded"
-                    style="object-fit: fill"
-                    alt="First slide"
-                  />
-                  <img
-                    src="./assets/Renders/View4/window_glass-4.png"
-                    style="z-index: 4"
-                    class="d-none windowGlass another-rec confWindow w-100 h-100 rounded"
-                    style="object-fit: fill"
-                    alt="First slide"
-                  />
-                  <img
-                    src="./assets/Renders/View4/top_pinho-4.png"
-                    style="z-index: 3"
-                    class="topPinho rect confTop w-100 h-100 rounded"
-                    style="object-fit: fill"
-                    alt="First slide"
-                  />
-                  <img
-                    src="./assets/Renders/View4/top_plywood-4.png"
-                    style="z-index: 3"
-                    class="d-none topPlywood rect confTop w-100 h-100 rounded"
-                    style="object-fit: fill"
-                    alt="First slide"
-                  />
-                  <img
-                    src="./assets/Renders/View4/top_whiteglass-4.png"
-                    style="z-index: 3"
-                    class="d-none topWhiteGlass rect confTop w-100 h-100 rounded"
-                    style="object-fit: fill"
-                    alt="First slide"
-                  />
-                  <img
-                    src="./assets/Renders/View4/top_marble-4.png"
-                    style="z-index: 3"
-                    class="d-none topMarble rect confTop w-100 h-100 rounded"
-                    style="object-fit: fill"
-                    alt="First slide"
-                  />
-                  <img
-                    src="./assets/Renders/View4/top_blackglass-4.png"
-                    style="z-index: 3"
-                    class="d-none topBlackGlass rect confTop w-100 h-100 rounded"
-                    style="object-fit: fill"
-                    alt="First slide"
-                  />
-                  <img
-                    src="./assets/Renders/View4/rack_pinho-4.png"
-                    style="z-index: 2"
-                    class="rackPinho another-rec confRack w-100 h-100 rounded"
-                    style="object-fit: fill"
-                    alt="First slide"
-                  />
-                  <img
-                    src="./assets/Renders/View4/rack_plywood-4.png"
-                    style="z-index: 2"
-                    class="d-none rackPlywood another-rec confRack w-100 h-100 rounded"
-                    style="object-fit: fill"
-                    alt="First slide"
-                  />
-                </div>
-              </button>
-              <!-- Botão5 -->
-              <button
-                type="button"
-                id="productImage6Btn"
-                data-bs-slide-to="4"
-                data-bs-target="#galeria"
-                class="btn bg-light-subtle btn-preview me-2 border-light-subtle"
-              >
+            </h2>
+            <div id="featCollapse" class="accordion-collapse collapse" aria-labelledby="feetHeading"
+              data-bs-parent="#configAccordion">
+              <div class="accordion-body">
+                <button id="btn_feet_classic" class="btn btn-circle btn-circle-active feetSection" role="button">
+                  <img src="assets/FeetTextures/Classic.png" class="img-fluid w-100 btn-circle-img" alt="" />
+                </button>
+                <button id="btn_feet_modern" class="btn btn-circle text-center feetSection" role="button">
+                  <img src="assets/FeetTextures/Modern.png" class="img-fluid w-100 btn-circle-img" alt="" />
+                </button>
+                <a id="btn_feet_none" class="btn btn-light btn-circle text-center feetSection" role="button">
+                  <img src="assets/FeetTextures/NoFeet.png" class="img-fluid w-100 btn-circle-img" alt="" /></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Botão de Adicionar ao Carrinho -->
+        <div class="row px-3 pt-3 mt-3">
+          <div class="col-2 px-0">
+            <select class="form-select py-2" aria-label="Default select example">
+              <option selected value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+            </select>
+          </div>
+          <div class="col-10 my-auto">
+            <button type="button" class="btn btn-dark w-100 py-2">
+              <i class="bi bi-cart-fill pe-2"></i>Adicionar ao Carrinho
+            </button>
+          </div>
+        </div>
+        <!-- Entrega / Montagem -->
+        <div class="row justify-content-center align-items-center py-4">
+          <div class="col-12">
+            <div class="container rounded py-3 px-3 d-block text-center justify-content-center bg-body-secondary">
+              <a class="link d-inline-flex mx-auto" href="https://www.laredoute.pt/services/delivery.aspx">
+                <i class="bi bi-truck pe-2"></i>
+                <p class="m-0">Entrega Plus ao Domícilio</p>
+                <i class="bi bi-caret-right-fill"></i>
+              </a>
+              <hr />
+              <a class="link d-inline-flex mx-auto" href="https://www.laredoute.pt/logisimple.aspx">
+                <i class="bi bi-screwdriver pe-2"></i>
+                <p class="m-0">Serviço de Montagem Disponível</p>
+                <i class="bi bi-caret-right-fill"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- Sugestões de Produtos -->
+  <div class="container-fluid ps-5 bg-body-tertiary pb-5" style="overflow-x: hidden">
+    <h3 class="pt-5 pb-2"><b>Combina Com:</b></h3>
+    <div class="row text-nowrap" style="overflow-x: auto; overflow-y: hidden">
+      <div class="col-12 p-0">
+        <div class="d-inline-flex">
+          <div class="pe-3" style="width: 350px">
+            <div id="product1" class="itemCard">
+              <div class="itemBackground bg-body-secondary">
                 <img
-                  src="./assets/icons/3d.svg"
-                  class="w-100 h-100 p-2"
-                  alt=""
-                />
-              </button>
-            </div>
-          </div>
-        </div>
-        <!-- Informações e Configurações do Produto -->
-        <div class="col-12 col-md-4 px-5 pt-3">
-          <p class="my-0">
-            <i class="bi bi-star-fill pe-1"></i
-            ><i class="bi bi-star-fill pe-1"></i
-            ><i class="bi bi-star-fill pe-1"></i
-            ><i class="bi bi-star-fill pe-1"></i
-            ><i class="bi bi-star-fill pe-1"></i>(3)
-          </p>
-          <div class="d-flex mt-2 justify-content-between">
-            <!-- Nome do Produto -->
-            <h4><b>GABIN</b></h4>
-            <!-- Preço do Produto -->
-            <div class="flex-end">
-              <h5 class="mb-1">€ 580.50 EUR</h5>
-              <p class="text-danger text-end m-0"><del>€ 645.90 EUR</del></p>
-            </div>
-          </div>
-          <!-- Configurador -->
-          <div class="accordion accordion-flush" id="configAccordion">
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="topHeading">
-                <button
-                  class="px-1 accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#topCollapse"
-                  aria-expanded="false"
-                  aria-controls="topCollapse"
-                >
-                  <p class="py-0 my-0" id="tampo"><b>TAMPO:</b>&nbsp;Pinho</p>
-                </button>
-              </h2>
-              <div
-                id="topCollapse"
-                class="accordion-collapse collapse"
-                aria-labelledby="topHeading"
-                data-bs-parent="#configAccordion"
-              >
-                <div class="accordion-body">
-                  <button
-                    id="btn_top_pinho"
-                    class="btn btn-circle text-center btn-circle-active tampoSection"
-                    role="button"
-                  >
-                    <img
-                      src="assets/Materials/Woods/Pinho/Wood028_2K_Color.png"
-                      class="img-fluid w-100 btn-circle-img"
-                      alt=""
-                    />
-                  </button>
-                  <button
-                    id="btn_top_marble"
-                    class="btn btn-circle text-center tampoSection"
-                    role="button"
-                  >
-                    <img
-                      src="assets/Materials/Stone/Marble/marblebtn.jpg"
-                      class="img-fluid w-100 btn-circle-img"
-                      alt=""
-                    />
-                  </button>
-                  <button
-                    id="btn_top_whiteGlass"
-                    class="btn btn-circle text-center tampoSection"
-                    role="button"
-                  >
-                    <img
-                      src="assets/Materials/Glass/WhiteGlass.jpg"
-                      class="img-fluid w-100 btn-circle-img"
-                      alt=""
-                    />
-                  </button>
-                  <button
-                    id="btn_top_darkGlass"
-                    class="btn btn-circle text-center tampoSection"
-                    role="button"
-                  >
-                    <img
-                      src="assets/Materials/Glass/DarkGlass.jpg"
-                      class="img-fluid w-100 btn-circle-img"
-                      alt=""
-                    />
-                  </button>
-                  <button
-                    id="btn_top_plywood"
-                    class="btn btn-circle text-center tampoSection"
-                    role="button"
-                  >
-                    <img
-                      src="assets/Materials/Woods/Plywood/Wood_Plywood_Front_001_basecolor.jpg"
-                      class="img-fluid w-100 btn-circle-img"
-                      alt=""
-                    />
-                  </button>
-                </div>
+                  src="https://cdn.laredoute.com/products/4/d/c/4dca30937d4354c17467e22bc081d308.jpg?imgopt=twic&twic=v1/cover=1200x1200"
+                  class="img-fluid cover w-100 rounded20 shadow" alt="" />
+                <img id class="product-image-hover"
+                  src="https://cdn.laredoute.com/products/e/9/f/e9f91b6813c9506d25b410ce0df085df.jpg?imgopt=twic&twic=v1/cover=1200x1200" />
               </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="woodHeading">
-                <button
-                  class="px-1 accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#woodCollapse"
-                  aria-expanded="false"
-                  aria-controls="woodCollapse"
-                >
-                  <p class="py-0 my-0" id="wood"><b>MADEIRA:</b> Pinho</p>
-                </button>
-              </h2>
-              <div
-                id="woodCollapse"
-                class="accordion-collapse collapse"
-                aria-labelledby="woodHeading"
-                data-bs-parent="#configAccordion"
-              >
-                <div class="accordion-body">
-                  <button
-                    id="btn_pinho"
-                    class="btn btn-circle text-center btn-circle-active woodSection"
-                    role="button"
-                  >
-                    <img
-                      src="assets/Materials/Woods/Pinho/Wood028_2K_Color.png"
-                      class="img-fluid w-100 btn-circle-img"
-                      alt=""
-                    />
-                  </button>
-                  <button
-                    id="btn_plywood"
-                    class="btn btn-circle text-center woodSection"
-                    role="button"
-                  >
-                    <img
-                      src="assets/Materials/Woods/Plywood/Wood_Plywood_Front_001_basecolor.jpg"
-                      class="img-fluid w-100 btn-circle-img"
-                      alt=""
-                    />
-                  </button>
+              <div class="row">
+                <div class="col-10 pe-0">
+                  <p class="itemTitle">
+                    <a class="link" href="https://www.laredoute.pt/ppdp/prod-350255507.aspx">
+                      Lote de 2 cadeiras dobráveis, em faia a palhinha, Rivia
+                    </a>
+                  </p>
+                  <p class="itemText text-secondary">Desde 275€</p>
                 </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="windowHeading">
-                <button
-                  class="px-1 accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#windowCollapse"
-                  aria-expanded="false"
-                  aria-controls="windowCollapse"
-                >
-                  <p class="py-0 my-0" id="window"><b>JANELA:</b> Vime</p>
-                </button>
-              </h2>
-              <div
-                id="windowCollapse"
-                class="accordion-collapse collapse"
-                aria-labelledby="windowHeading"
-                data-bs-parent="#configAccordion"
-              >
-                <div class="accordion-body">
-                  <button
-                    id="btn_window_wicker"
-                    class="btn btn-circle text-center btn-circle-active doorSection"
-                    role="button"
-                  >
-                    <img
-                      src="assets/Materials/Woods/DoorDetail/Wood_Wicker_010_basecolor.jpg"
-                      class="img-fluid w-100 btn-circle-img"
-                      alt=""
-                    />
+                <div class="col-2 px-0 pt-2">
+                  <button type="button" name="" id="" class="btn-cart btn btn-secondary">
+                    <i class="bi bi-cart-plus-fill"></i>
                   </button>
-                  <button
-                    id="btn_window_glass"
-                    class="btn btn-circle text-center doorSection"
-                    role="button"
-                  >
-                    <img
-                      src="assets/Materials/Glass/LightBlueGlass.jpg"
-                      class="img-fluid w-100 btn-circle-img"
-                      alt=""
-                    />
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="PullerHeading">
-                <button
-                  class="px-1 accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#pullerCollapse"
-                  aria-expanded="false"
-                  aria-controls="pullerCollapse"
-                >
-                  <p class="py-0 my-0" id="puxador"><b>PUXADOR:</b> Clássico</p>
-                </button>
-              </h2>
-              <div
-                id="pullerCollapse"
-                class="accordion-collapse collapse"
-                aria-labelledby="PullerHeading"
-                data-bs-parent="#configAccordion"
-              >
-                <div class="accordion-body">
-                  <button
-                    id="btn_handler_classic"
-                    class="btn btn-circle text-center btn-circle-active handlerSection"
-                    role="button"
-                  >
-                    <img
-                      src="assets/PullerTextures/Classic.png"
-                      class="img-fluid w-100 btn-circle-img"
-                      alt=""
-                    />
-                  </button>
-                  <button
-                    id="btn_handler_modern"
-                    class="btn btn-circle text-center handlerSection"
-                    role="button"
-                  >
-                    <img
-                      src="assets/PullerTextures/Modern.png"
-                      class="img-fluid w-100 btn-circle-img"
-                      alt=""
-                    />
-                  </button>
-                  <button
-                    id="btn_handler_leather"
-                    class="btn btn-circle text-center handlerSection"
-                    role="button"
-                  >
-                    <img
-                      src="assets/PullerTextures/Leather.png"
-                      class="img-fluid w-100 btn-circle-img"
-                      alt=""
-                    />
-                  </button>
-                </div>
-              </div>
-            </div>
-            <div class="accordion-item">
-              <h2 class="accordion-header" id="feetHeading">
-                <button
-                  class="px-1 accordion-button collapsed"
-                  type="button"
-                  data-bs-toggle="collapse"
-                  data-bs-target="#featCollapse"
-                  aria-expanded="false"
-                  aria-controls="featCollapse"
-                >
-                  <p class="py-0 my-0" id="feet"><b>PÉS:</b> Integrados</p>
-                </button>
-              </h2>
-              <div
-                id="featCollapse"
-                class="accordion-collapse collapse"
-                aria-labelledby="feetHeading"
-                data-bs-parent="#configAccordion"
-              >
-                <div class="accordion-body">
-                  <button
-                    id="btn_feet_classic"
-                    class="btn btn-circle btn-circle-active feetSection"
-                    role="button"
-                  >
-                    <img
-                      src="assets/FeetTextures/Classic.png"
-                      class="img-fluid w-100 btn-circle-img"
-                      alt=""
-                    />
-                  </button>
-                  <button
-                    id="btn_feet_modern"
-                    class="btn btn-circle text-center feetSection"
-                    role="button"
-                  >
-                    <img
-                      src="assets/FeetTextures/Modern.png"
-                      class="img-fluid w-100 btn-circle-img"
-                      alt=""
-                    />
-                  </button>
-                  <a
-                    id="btn_feet_none"
-                    class="btn btn-light btn-circle text-center feetSection"
-                    role="button"
-                  >
-                    <img
-                      src="assets/FeetTextures/NoFeet.png"
-                      class="img-fluid w-100 btn-circle-img"
-                      alt=""
-                  /></a>
                 </div>
               </div>
             </div>
           </div>
-          <!-- Botão de Adicionar ao Carrinho -->
-          <div class="row px-3 pt-3 mt-3">
-            <div class="col-2 px-0">
-               <select class="form-select py-2" aria-label="Default select example">
-                  <option selected value="1">1</option>
-                  <option value="2">2</option>
-                  <option value="3">3</option>
-                  <option value="4">4</option>
-                  <option value="5">5</option>
-                  <option value="6">6</option>
-                  <option value="7">7</option>
-                  <option value="8">8</option>
-                  <option value="9">9</option>
-                  <option value="10">10</option>
-                  <option value="11">11</option>
-                  <option value="12">12</option>
-                </select>
-             </div>
-            <div class="col-10 my-auto">
-              <button type="button" class="btn btn-dark w-100 py-2">
-                <i class="bi bi-cart-fill pe-2"></i>Adicionar ao Carrinho
-              </button>
-            </div>
-          </div>
-          <!-- Entrega / Montagem -->
-          <div class="row justify-content-center align-items-center py-4">
-            <div class="col-12">
-              <div
-                class="container rounded py-3 px-3 d-block text-center justify-content-center bg-body-secondary"
-              >
-                <a
-                  class="link d-inline-flex mx-auto"
-                  href="https://www.laredoute.pt/services/delivery.aspx"
-                >
-                  <i class="bi bi-truck pe-2"></i>
-                  <p class="m-0">Entrega Plus ao Domícilio</p>
-                  <i class="bi bi-caret-right-fill"></i>
-                </a>
-                <hr />
-                <a
-                  class="link d-inline-flex mx-auto"
-                  href="https://www.laredoute.pt/logisimple.aspx"
-                >
-                  <i class="bi bi-screwdriver pe-2"></i>
-                  <p class="m-0">Serviço de Montagem Disponível</p>
-                  <i class="bi bi-caret-right-fill"></i>
-                </a>
+          <div class="pe-3" style="width: 350px">
+            <div id="product2" class="itemCard">
+              <div class="itemBackground bg-body-secondary">
+                <img
+                  src="https://cdn.laredoute.com/products/0/f/3/0f38126c4bd3957f90ab4e276d7c83d5.jpg?imgopt=twic&twic=v1/cover=1200x1200"
+                  class="img-fluid cover w-100 rounded20 shadow" alt="" />
+                <img id class="product-image-hover"
+                  src="https://cdn.laredoute.com/products/1/f/9/1f9dc1369c6b5400da98f7a4554cf30e.jpg?imgopt=twic&twic=v1/cover=1200x1200" />
+              </div>
+              <div class="row">
+                <div class="col-10 pe-0">
+                  <p class="itemTitle">
+                    <a class="link" href="https://www.laredoute.pt/ppdp/prod-350271834.aspx#shoppingtool=multipdp">
+                      Aparador em pinho maciço e palhinha, Gabin
+                    </a>
+                  </p>
+                  <p class="itemText text-secondary">Desde 645€</p>
+                </div>
+                <div class="col-2 px-0 pt-2">
+                  <button type="button" name="" id="" class="btn-cart btn btn-secondary">
+                    <i class="bi bi-cart-plus-fill"></i>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
-    </div>
-    <!-- Sugestões de Produtos -->
-    <div
-      class="container-fluid ps-5 bg-body-tertiary pb-5"
-      style="overflow-x: hidden"
-    >
-      <h3 class="pt-5 pb-2"><b>Combina Com:</b></h3>
-      <div class="row text-nowrap" style="overflow-x: auto; overflow-y: hidden">
-        <div class="col-12 p-0">
-          <div class="d-inline-flex">
-            <div class="pe-3" style="width: 350px">
-              <div id="product1" class="itemCard">
-                <div class="itemBackground bg-body-secondary">
-                  <img
-                    src="https://cdn.laredoute.com/products/4/d/c/4dca30937d4354c17467e22bc081d308.jpg?imgopt=twic&twic=v1/cover=1200x1200"
-                    class="img-fluid cover w-100 rounded20 shadow"
-                    alt=""
-                  />
-                  <img
-                    id
-                    class="product-image-hover"
-                    src="https://cdn.laredoute.com/products/e/9/f/e9f91b6813c9506d25b410ce0df085df.jpg?imgopt=twic&twic=v1/cover=1200x1200"
-                  />
+          <div class="pe-3" style="width: 350px">
+            <div id="product2" class="itemCard">
+              <div class="itemBackground bg-white">
+                <img
+                  src="https://cdn.laredoute.com/products/6/4/b/64bdc291e15d45b2b064950457f77022.jpg?imgopt=twic&twic=v1/cover=1200x1200"
+                  class="img-fluid contain w-100 rounded20 shadow" alt="" />
+                <img id class="product-image-hover"
+                  src="https://cdn.laredoute.com/products/2/3/7/237065447f2d2736e5bc87e959589d85.jpg?imgopt=twic&twic=v1/cover=1200x1200" />
+              </div>
+              <div class="row">
+                <div class="col-10 pe-0">
+                  <p class="itemTitle">
+                    <a class="link" href="https://www.laredoute.pt/ppdp/prod-350274916.aspx#shoppingtool=search">
+                      Cadeirão vintage, em carvalho e algodão/linho, Linna
+                    </a>
+                  </p>
+                  <p class="itemText text-secondary">Desde 862€</p>
                 </div>
-                <div class="row">
-                  <div class="col-10 pe-0">
-                    <p class="itemTitle">
-                      <a
-                        class="link"
-                        href="https://www.laredoute.pt/ppdp/prod-350255507.aspx"
-                      >
-                        Lote de 2 cadeiras dobráveis, em faia a palhinha, Rivia
-                      </a>
-                    </p>
-                    <p class="itemText text-secondary">Desde 275€</p>
-                  </div>
-                  <div class="col-2 px-0 pt-2">
-                    <button
-                      type="button"
-                      name=""
-                      id=""
-                      class="btn-cart btn btn-secondary"
-                    >
-                      <i class="bi bi-cart-plus-fill"></i>
-                    </button>
-                  </div>
+                <div class="col-2 px-0 pt-2">
+                  <button type="button" name="" id="" class="btn-cart btn btn-secondary">
+                    <i class="bi bi-cart-plus-fill"></i>
+                  </button>
                 </div>
               </div>
             </div>
-            <div class="pe-3" style="width: 350px">
-              <div id="product2" class="itemCard">
-                <div class="itemBackground bg-body-secondary">
-                  <img
-                    src="https://cdn.laredoute.com/products/0/f/3/0f38126c4bd3957f90ab4e276d7c83d5.jpg?imgopt=twic&twic=v1/cover=1200x1200"
-                    class="img-fluid cover w-100 rounded20 shadow"
-                    alt=""
-                  />
-                  <img
-                    id
-                    class="product-image-hover"
-                    src="https://cdn.laredoute.com/products/1/f/9/1f9dc1369c6b5400da98f7a4554cf30e.jpg?imgopt=twic&twic=v1/cover=1200x1200"
-                  />
+          </div>
+          <div class="pe-3" style="width: 350px">
+            <div id="product2" class="itemCard">
+              <div class="itemBackground bg-white">
+                <img
+                  src="https://github.com/JoaoFranco03/joaofranco03.github.io/blob/main/assets/img/Product2.png?raw=true"
+                  class="img-fluid cover w-100 rounded20 shadow" alt="" />
+                <img id class="product-image-hover" src="./assets/img/Product2Hover.png" />
+              </div>
+              <div class="row">
+                <div class="col-10 pe-0">
+                  <p class="itemTitle">
+                    <a class="link"
+                      href="https://www.laredoute.pt/ppdp/prod-350216027.aspx#searchkeyword=movel%20tv&shoppingtool=search">
+                      Móvel para TV em folha de carvalho, 3 portas, Madria
+                    </a>
+                  </p>
+                  <p class="itemText text-secondary">Desde 794€</p>
                 </div>
-                <div class="row">
-                  <div class="col-10 pe-0">
-                    <p class="itemTitle">
-                      <a
-                        class="link"
-                        href="https://www.laredoute.pt/ppdp/prod-350271834.aspx#shoppingtool=multipdp"
-                      >
-                        Aparador em pinho maciço e palhinha, Gabin
-                      </a>
-                    </p>
-                    <p class="itemText text-secondary">Desde 645€</p>
-                  </div>
-                  <div class="col-2 px-0 pt-2">
-                    <button
-                      type="button"
-                      name=""
-                      id=""
-                      class="btn-cart btn btn-secondary"
-                    >
-                      <i class="bi bi-cart-plus-fill"></i>
-                    </button>
-                  </div>
+                <div class="col-2 px-0 pt-2">
+                  <button type="button" name="" id="" class="btn-cart btn btn-secondary">
+                    <i class="bi bi-cart-plus-fill"></i>
+                  </button>
                 </div>
               </div>
             </div>
-            <div class="pe-3" style="width: 350px">
-              <div id="product2" class="itemCard">
-                <div class="itemBackground bg-white">
-                  <img
-                    src="https://cdn.laredoute.com/products/6/4/b/64bdc291e15d45b2b064950457f77022.jpg?imgopt=twic&twic=v1/cover=1200x1200"
-                    class="img-fluid contain w-100 rounded20 shadow"
-                    alt=""
-                  />
-                  <img
-                    id
-                    class="product-image-hover"
-                    src="https://cdn.laredoute.com/products/2/3/7/237065447f2d2736e5bc87e959589d85.jpg?imgopt=twic&twic=v1/cover=1200x1200"
-                  />
+          </div>
+          <div class="pe-3" style="width: 350px">
+            <div id="product2" class="itemCard">
+              <div class="itemBackground bg-body-secondary">
+                <img
+                  src="https://cdn.laredoute.com/products/9/6/8/968a23535df9231a127cb2142a7465ea.jpg?imgopt=twic&twic=v1"
+                  class="img-fluid cover w-100 shadow rounded20" alt="" />
+                <img id class="product-image-hover"
+                  src="https://cdn.laredoute.com/products/0/5/0/050f2599a845bdda1095adc12ffc0a70.jpg?imgopt=twic&twic=v1/cover=1200x1200" />
+              </div>
+              <div class="row">
+                <div class="col-10 pe-0">
+                  <p class="itemTitle">
+                    <a class="link" href="https://www.laredoute.pt/ppdp/prod-350275132.aspx#shoppingtool=multipdp">
+                      Mesa redonda, 4 pessoas, folha de nogueira, Lambro
+                    </a>
+                  </p>
+                  <p class="itemText text-secondary">Desde 747€</p>
                 </div>
-                <div class="row">
-                  <div class="col-10 pe-0">
-                    <p class="itemTitle">
-                      <a
-                        class="link"
-                        href="https://www.laredoute.pt/ppdp/prod-350274916.aspx#shoppingtool=search"
-                      >
-                        Cadeirão vintage, em carvalho e algodão/linho, Linna
-                      </a>
-                    </p>
-                    <p class="itemText text-secondary">Desde 862€</p>
-                  </div>
-                  <div class="col-2 px-0 pt-2">
-                    <button
-                      type="button"
-                      name=""
-                      id=""
-                      class="btn-cart btn btn-secondary"
-                    >
-                      <i class="bi bi-cart-plus-fill"></i>
-                    </button>
-                  </div>
+                <div class="col-2 px-0 pt-2">
+                  <button type="button" name="" id="" class="btn-cart btn btn-secondary">
+                    <i class="bi bi-cart-plus-fill"></i>
+                  </button>
                 </div>
               </div>
             </div>
-            <div class="pe-3" style="width: 350px">
-              <div id="product2" class="itemCard">
-                <div class="itemBackground bg-white">
-                  <img
-                    src="https://github.com/JoaoFranco03/joaofranco03.github.io/blob/main/assets/img/Product2.png?raw=true"
-                    class="img-fluid cover w-100 rounded20 shadow"
-                    alt=""
-                  />
-                  <img
-                    id
-                    class="product-image-hover"
-                    src="./assets/img/Product2Hover.png"
-                  />
-                </div>
-                <div class="row">
-                  <div class="col-10 pe-0">
-                    <p class="itemTitle">
-                      <a
-                        class="link"
-                        href="https://www.laredoute.pt/ppdp/prod-350216027.aspx#searchkeyword=movel%20tv&shoppingtool=search"
-                      >
-                        Móvel para TV em folha de carvalho, 3 portas, Madria
-                      </a>
-                    </p>
-                    <p class="itemText text-secondary">Desde 794€</p>
-                  </div>
-                  <div class="col-2 px-0 pt-2">
-                    <button
-                      type="button"
-                      name=""
-                      id=""
-                      class="btn-cart btn btn-secondary"
-                    >
-                      <i class="bi bi-cart-plus-fill"></i>
-                    </button>
-                  </div>
-                </div>
+          </div>
+          <div class="pe-3" style="width: 350px">
+            <div id="product2" class="itemCard">
+              <div class="itemBackground bg-body-secondary">
+                <img
+                  src="https://cdn.laredoute.com/products/4/5/7/4572014a68619d624425bed80755a187.jpg?imgopt=twic&twic=v1/cover=1200x1200"
+                  class="img-fluid cover w-100 rounded20 shadow" alt="" />
+                <img id class="product-image-hover"
+                  src="https://cdn.laredoute.com/products/4/1/8/4180b40187d0af7ae269d0b298d99017.jpg?imgopt=twic&twic=v1/cover=1200x1200" />
               </div>
-            </div>
-            <div class="pe-3" style="width: 350px">
-              <div id="product2" class="itemCard">
-                <div class="itemBackground bg-body-secondary">
-                  <img
-                    src="https://cdn.laredoute.com/products/9/6/8/968a23535df9231a127cb2142a7465ea.jpg?imgopt=twic&twic=v1"
-                    class="img-fluid cover w-100 shadow rounded20"
-                    alt=""
-                  />
-                  <img
-                    id
-                    class="product-image-hover"
-                    src="https://cdn.laredoute.com/products/0/5/0/050f2599a845bdda1095adc12ffc0a70.jpg?imgopt=twic&twic=v1/cover=1200x1200"
-                  />
+              <div class="row">
+                <div class="col-10 pe-0">
+                  <p class="itemTitle">
+                    <a class="link" href="https://www.laredoute.pt/ppdp/prod-350275205.aspx#shoppingtool=multipdp">
+                      Aparador baixo, em carvalho, Lipa
+                    </a>
+                  </p>
+                  <p class="itemText text-secondary">Desde 996€</p>
                 </div>
-                <div class="row">
-                  <div class="col-10 pe-0">
-                    <p class="itemTitle">
-                      <a
-                        class="link"
-                        href="https://www.laredoute.pt/ppdp/prod-350275132.aspx#shoppingtool=multipdp"
-                      >
-                        Mesa redonda, 4 pessoas, folha de nogueira, Lambro
-                      </a>
-                    </p>
-                    <p class="itemText text-secondary">Desde 747€</p>
-                  </div>
-                  <div class="col-2 px-0 pt-2">
-                    <button
-                      type="button"
-                      name=""
-                      id=""
-                      class="btn-cart btn btn-secondary"
-                    >
-                      <i class="bi bi-cart-plus-fill"></i>
-                    </button>
-                  </div>
-                </div>
-              </div>
-            </div>
-            <div class="pe-3" style="width: 350px">
-              <div id="product2" class="itemCard">
-                <div class="itemBackground bg-body-secondary">
-                  <img
-                    src="https://cdn.laredoute.com/products/4/5/7/4572014a68619d624425bed80755a187.jpg?imgopt=twic&twic=v1/cover=1200x1200"
-                    class="img-fluid cover w-100 rounded20 shadow"
-                    alt=""
-                  />
-                  <img
-                    id
-                    class="product-image-hover"
-                    src="https://cdn.laredoute.com/products/4/1/8/4180b40187d0af7ae269d0b298d99017.jpg?imgopt=twic&twic=v1/cover=1200x1200"
-                  />
-                </div>
-                <div class="row">
-                  <div class="col-10 pe-0">
-                    <p class="itemTitle">
-                      <a
-                        class="link"
-                        href="https://www.laredoute.pt/ppdp/prod-350275205.aspx#shoppingtool=multipdp"
-                      >
-                        Aparador baixo, em carvalho, Lipa
-                      </a>
-                    </p>
-                    <p class="itemText text-secondary">Desde 996€</p>
-                  </div>
-                  <div class="col-2 px-0 pt-2">
-                    <button
-                      type="button"
-                      name=""
-                      id=""
-                      class="btn-cart btn btn-secondary"
-                    >
-                      <i class="bi bi-cart-plus-fill"></i>
-                    </button>
-                  </div>
+                <div class="col-2 px-0 pt-2">
+                  <button type="button" name="" id="" class="btn-cart btn btn-secondary">
+                    <i class="bi bi-cart-plus-fill"></i>
+                  </button>
                 </div>
               </div>
             </div>
@@ -1648,352 +828,228 @@
         </div>
       </div>
     </div>
-    <!-- Informações Detalhadas do Produto -->
-    <div class="container-fluid ps-3 px-md-5 mt-5" style="overflow-x: hidden">
-      <ul
-        class="nav px-4 px-md-0 nav-tabs justify-content-md-center flex-nowrap"
-        id="myTab"
-        style="overflow-x: scroll; overflow-y: hidden"
-        role="tablist"
-      >
-        <li class="nav-item" role="presentation">
-          <button
-            class="nav-link active"
-            id="home-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#home-tab-pane"
-            type="button"
-            role="tab"
-            aria-controls="home-tab-pane"
-            aria-selected="true"
-          >
-            Descrição:
-          </button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button
-            class="nav-link"
-            id="profile-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#profile-tab-pane"
-            type="button"
-            role="tab"
-            aria-controls="profile-tab-pane"
-            aria-selected="false"
-          >
-            Medidas
-          </button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button
-            class="nav-link"
-            id="composition-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#composition-tab-pane"
-            type="button"
-            role="tab"
-            aria-controls="composition-tab-pane"
-            aria-selected="false"
-          >
-            Composição
-          </button>
-        </li>
-        <li class="nav-item" role="presentation">
-          <button
-            class="nav-link"
-            id="contact-tab"
-            data-bs-toggle="tab"
-            data-bs-target="#contact-tab-pane"
-            type="button"
-            role="tab"
-            aria-controls="contact-tab-pane"
-            aria-selected="false"
-          >
-            Avaliações
-          </button>
-        </li>
-      </ul>
-      <div class="tab-content" id="myTabContent">
-        <div
-          class="tab-pane fade show active"
-          id="home-tab-pane"
-          role="tabpanel"
-          aria-labelledby="home-tab"
-          tabindex="0"
-        >
-          <div class="row px-5 py-5 align-items-center">
-            <div class="col-12 col-md-6">
-              <h3><b>Requintado por excelência.</b></h3>
-              <p class="pt-2">
-                <br />Feito em Pinho maciço ligeiramente polido e palhinha, este
-                movél resulta numa transformação bem sucedida de um móvel baixo
-                para TV num móvel com caráter! <br /><br />Uma criação
-                <b>La Redoute Intérieurs.</b>
+  </div>
+  <!-- Informações Detalhadas do Produto -->
+  <div class="container-fluid ps-3 px-md-5 mt-5" style="overflow-x: hidden">
+    <ul class="nav px-4 px-md-0 nav-tabs justify-content-md-center flex-nowrap" id="myTab"
+      style="overflow-x: scroll; overflow-y: hidden" role="tablist">
+      <li class="nav-item" role="presentation">
+        <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button"
+          role="tab" aria-controls="home-tab-pane" aria-selected="true">
+          Descrição:
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button"
+          role="tab" aria-controls="profile-tab-pane" aria-selected="false">
+          Medidas
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="composition-tab" data-bs-toggle="tab" data-bs-target="#composition-tab-pane"
+          type="button" role="tab" aria-controls="composition-tab-pane" aria-selected="false">
+          Composição
+        </button>
+      </li>
+      <li class="nav-item" role="presentation">
+        <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button"
+          role="tab" aria-controls="contact-tab-pane" aria-selected="false">
+          Avaliações
+        </button>
+      </li>
+    </ul>
+    <div class="tab-content" id="myTabContent">
+      <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
+        <div class="row px-5 py-5 align-items-center">
+          <div class="col-12 col-md-6">
+            <h3><b>Requintado por excelência.</b></h3>
+            <p class="pt-2">
+              <br />Feito em Pinho maciço ligeiramente polido e palhinha, este
+              movél resulta numa transformação bem sucedida de um móvel baixo
+              para TV num móvel com caráter! <br /><br />Uma criação
+              <b>La Redoute Intérieurs.</b>
+            </p>
+          </div>
+          <div class="col-12 col-md-6">
+            <img src="./assets/Renders/DefaultViews/default_livingroom_view.png" class="img-fluid rounded" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
+        <div class="row align-items-center">
+          <div class="col-12 pt-3 col-md-5 px-5">
+            <table class="table px-5">
+              <tbody>
+                <tr>
+                  <td>Comprimento:</td>
+                  <td class="text-secondary">152 cm</td>
+                </tr>
+                <tr>
+                  <td>Profundidade</td>
+                  <td class="text-secondary">152 cm</td>
+                </tr>
+                <tr>
+                  <td>Altura</td>
+                  <td class="text-secondary">57 cm</td>
+                </tr>
+                <tr>
+                  <td>Gavetas</td>
+                  <td class="text-secondary">40,8 x 11,7 x 43,8 cm</td>
+                </tr>
+                <tr>
+                  <td>Prateleira transversal</td>
+                  <td class="text-secondary">96,4 x 27,5 x 50 cm</td>
+                </tr>
+                <tr>
+                  <td>4 prateleiras do lado direito</td>
+                  <td class="text-secondary">47,8 x 27,5 x 50 cm</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+          <div class="col-12 col-md-7">
+            <img src="./assets/Renders/DefaultViews/measurements.png" class="img-fluid contain ps-5" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="composition-tab-pane" role="tabpanel" aria-labelledby="composition-tab"
+        tabindex="0">
+        <div class="row px-5 py-5 align-items-center">
+          <div class="col-12 col-md-6">
+            <h3 class="pb-2"><b>O Móvel Consiste em:</b></h3>
+            <ul>
+              <li>
+                Em pinho maciço ligeiramente polido, acabamento em carvalho
+                com verniz nitrocelulósico
+              </li>
+              <li>2 portas em palhinha</li>
+              <li>1 separador vertical</li>
+              <li>2 prateleiras amovíveis e reguláveis em 3 posições</li>
+              <li>4 nichos</li>
+              <li>2 gavetas sobre corrediças em madeira</li>
+              <li>Puxadores em metal envelhecido</li>
+              <li>Fundo do móvel em MDF decoração em madeira</li>
+            </ul>
+          </div>
+          <div class="col-12 col-md-6">
+            <img src="./assets/Renders/DefaultViews/default_livingroom_view.png" class="img-fluid rounded" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
+        <div class="row px-5 pt-5">
+          <div class="col-12 pt-3 col-md-4">
+            <div class="py-5 p-3 shadow rounded text-center sticky-top bg-body-primary">
+              <h1 class="pb-4">
+                5.0<i class="ps-2 bi bi-star-fill pe-1"></i>
+              </h1>
+              <p>
+                Relação qualidade/preço:<i class="bi bi-star-fill px-1"></i><i class="bi bi-star-fill pe-1"></i><i
+                  class="bi bi-star-fill pe-1"></i><i class="bi bi-star-fill pe-1"></i><i
+                  class="bi bi-star-fill pe-1"></i>
+              </p>
+              <p>
+                Design do produto:<i class="bi bi-star-fill px-1"></i><i class="bi bi-star-fill pe-1"></i><i
+                  class="bi bi-star-fill pe-1"></i><i class="bi bi-star-fill pe-1"></i><i
+                  class="bi bi-star-fill pe-1"></i>
+              </p>
+              <p>
+                Prático:<i class="bi bi-star-fill px-1"></i><i class="bi bi-star-fill pe-1"></i><i
+                  class="bi bi-star-fill pe-1"></i><i class="bi bi-star-fill pe-1"></i><i
+                  class="bi bi-star-fill pe-1"></i>
               </p>
             </div>
-            <div class="col-12 col-md-6">
-              <img
-                src="./assets/Renders/DefaultViews/default_livingroom_view.png"
-                class="img-fluid rounded"
-                alt=""
-              />
-            </div>
           </div>
-        </div>
-        <div
-          class="tab-pane fade"
-          id="profile-tab-pane"
-          role="tabpanel"
-          aria-labelledby="profile-tab"
-          tabindex="0"
-        >
-          <div class="row align-items-center">
-            <div class="col-12 pt-3 col-md-5 px-5">
-              <table class="table px-5">
-                <tbody>
-                  <tr>
-                    <td>Comprimento:</td>
-                    <td class="text-secondary">152 cm</td>
-                  </tr>
-                  <tr>
-                    <td>Profundidade</td>
-                    <td class="text-secondary">152 cm</td>
-                  </tr>
-                  <tr>
-                    <td>Altura</td>
-                    <td class="text-secondary">57 cm</td>
-                  </tr>
-                  <tr>
-                    <td>Gavetas</td>
-                    <td class="text-secondary">40,8 x 11,7 x 43,8 cm</td>
-                  </tr>
-                  <tr>
-                    <td>Prateleira transversal</td>
-                    <td class="text-secondary">96,4 x 27,5 x 50 cm</td>
-                  </tr>
-                  <tr>
-                    <td>4 prateleiras do lado direito</td>
-                    <td class="text-secondary">47,8 x 27,5 x 50 cm</td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="col-12 col-md-7">
-              <img
-                src="./assets/Renders/DefaultViews/measurements.png"
-                class="img-fluid contain ps-5"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-        <div
-          class="tab-pane fade"
-          id="composition-tab-pane"
-          role="tabpanel"
-          aria-labelledby="composition-tab"
-          tabindex="0"
-        >
-          <div class="row px-5 py-5 align-items-center">
-            <div class="col-12 col-md-6">
-              <h3 class="pb-2"><b>O Móvel Consiste em:</b></h3>
-              <ul>
-                <li>
-                  Em pinho maciço ligeiramente polido, acabamento em carvalho
-                  com verniz nitrocelulósico
-                </li>
-                <li>2 portas em palhinha</li>
-                <li>1 separador vertical</li>
-                <li>2 prateleiras amovíveis e reguláveis em 3 posições</li>
-                <li>4 nichos</li>
-                <li>2 gavetas sobre corrediças em madeira</li>
-                <li>Puxadores em metal envelhecido</li>
-                <li>Fundo do móvel em MDF decoração em madeira</li>
-              </ul>
-            </div>
-            <div class="col-12 col-md-6">
-              <img
-                src="./assets/Renders/DefaultViews/default_livingroom_view.png"
-                class="img-fluid rounded"
-                alt=""
-              />
-            </div>
-          </div>
-        </div>
-        <div
-          class="tab-pane fade"
-          id="contact-tab-pane"
-          role="tabpanel"
-          aria-labelledby="contact-tab"
-          tabindex="0"
-        >
-          <div class="row px-5 pt-5">
-            <div class="col-12 pt-3 col-md-4">
-              <div
-                class="py-5 p-3 shadow rounded text-center sticky-top bg-body-primary"
-              >
-                <h1 class="pb-4">
-                  5.0<i class="ps-2 bi bi-star-fill pe-1"></i>
-                </h1>
-                <p>
-                  Relação qualidade/preço:<i class="bi bi-star-fill px-1"></i
-                  ><i class="bi bi-star-fill pe-1"></i
-                  ><i class="bi bi-star-fill pe-1"></i
-                  ><i class="bi bi-star-fill pe-1"></i
-                  ><i class="bi bi-star-fill pe-1"></i>
-                </p>
-                <p>
-                  Design do produto:<i class="bi bi-star-fill px-1"></i
-                  ><i class="bi bi-star-fill pe-1"></i
-                  ><i class="bi bi-star-fill pe-1"></i
-                  ><i class="bi bi-star-fill pe-1"></i
-                  ><i class="bi bi-star-fill pe-1"></i>
-                </p>
-                <p>
-                  Prático:<i class="bi bi-star-fill px-1"></i
-                  ><i class="bi bi-star-fill pe-1"></i
-                  ><i class="bi bi-star-fill pe-1"></i
-                  ><i class="bi bi-star-fill pe-1"></i
-                  ><i class="bi bi-star-fill pe-1"></i>
-                </p>
-              </div>
-            </div>
-            <div class="col-12 col-md-8">
-              <div class="row">
-                <div class="commentsSection">
-                  <div class="col-12 pb-4 pt-3">
-                    <div class="p-5 shadow rounded bg-body-primary">
-                      <p class="m-0 mb-2">
-                        <b>
-                          <i class="bi bi-star-fill px-1"></i
-                          ><i class="bi bi-star-fill px-1"></i
-                          ><i class="bi bi-star-fill px-1"></i
-                          ><i class="bi bi-star-fill px-1"></i
-                          ><i class="bi bi-star-fill px-1"></i>
-                        </b>
+          <div class="col-12 col-md-8">
+            <div class="row">
+              <div class="commentsSection">
+                <div class="col-12 pb-4 pt-3">
+                  <div class="p-5 shadow rounded bg-body-primary">
+                    <p class="m-0 mb-2">
+                      <b>
+                        <i class="bi bi-star-fill px-1"></i><i class="bi bi-star-fill px-1"></i><i
+                          class="bi bi-star-fill px-1"></i><i class="bi bi-star-fill px-1"></i><i
+                          class="bi bi-star-fill px-1"></i>
+                      </b>
+                    </p>
+                    <h4>Boa Qualidade</h4>
+                    <p>
+                      Estava um bocadinho apreensiva em comprar este móvel mas
+                      ele superou todas as minhas expectativas! É de fácil
+                      montagem e adequa-se muito bem ao espaço!
+                    </p>
+                    <p class="mb-2 text-secondary">
+                      Crítica de Mário Antunes - Cliente desde 2015
+                    </p>
+                    <div class="row d-inline-flex">
+                      <p class="pt-3 pe-3" style="width: fit-content">
+                        Achou Útil?
                       </p>
-                      <h4>Boa Qualidade</h4>
-                      <p>
-                        Estava um bocadinho apreensiva em comprar este móvel mas
-                        ele superou todas as minhas expectativas! É de fácil
-                        montagem e adequa-se muito bem ao espaço!
-                      </p>
-                      <p class="mb-2 text-secondary">
-                        Crítica de Mário Antunes - Cliente desde 2015
-                      </p>
-                      <div class="row d-inline-flex">
-                        <p class="pt-3 pe-3" style="width: fit-content">
-                          Achou Útil?
-                        </p>
-                        <div
-                          class="btn-group"
-                          role="group"
-                          aria-label="Basic example"
-                          style="width: fit-content"
-                        >
-                          <button
-                            type="button"
-                            class="text-secondary text-body btn"
-                            style="width: fit-content"
-                          >
-                            <i class="bi bi-hand-thumbs-up-fill me-2"></i>(5)
-                          </button>
-                          <button
-                            type="button"
-                            class="text-secondary text-body btn"
-                            style="width: fit-content"
-                          >
-                            <i class="bi bi-hand-thumbs-down-fill me-2"></i> (1)
-                          </button>
-                        </div>
+                      <div class="btn-group" role="group" aria-label="Basic example" style="width: fit-content">
+                        <button type="button" class="text-secondary text-body btn" style="width: fit-content">
+                          <i class="bi bi-hand-thumbs-up-fill me-2"></i>(5)
+                        </button>
+                        <button type="button" class="text-secondary text-body btn" style="width: fit-content">
+                          <i class="bi bi-hand-thumbs-down-fill me-2"></i> (1)
+                        </button>
                       </div>
                     </div>
                   </div>
-                  <div class="col-12 pb-4">
-                    <div class="p-5 shadow rounded bg-body-primary">
-                      <p class="m-0 mb-2">
-                        <b>
-                          <i class="bi bi-star-fill px-1"></i
-                          ><i class="bi bi-star-fill px-1"></i
-                          ><i class="bi bi-star-fill px-1"></i
-                          ><i class="bi bi-star-fill px-1"></i
-                          ><i class="bi bi-star-fill px-1"></i>
-                        </b>
+                </div>
+                <div class="col-12 pb-4">
+                  <div class="p-5 shadow rounded bg-body-primary">
+                    <p class="m-0 mb-2">
+                      <b>
+                        <i class="bi bi-star-fill px-1"></i><i class="bi bi-star-fill px-1"></i><i
+                          class="bi bi-star-fill px-1"></i><i class="bi bi-star-fill px-1"></i><i
+                          class="bi bi-star-fill px-1"></i>
+                      </b>
+                    </p>
+                    <h4>Muito Bom!!!</h4>
+                    <p>Ficou muito bem na minha sala de estar.</p>
+                    <p class="mb-2 text-secondary">
+                      Crítica de Ana Maria - Cliente desde 2009
+                    </p>
+                    <div class="row d-inline-flex">
+                      <p class="pt-3 pe-3" style="width: fit-content">
+                        Achou Útil?
                       </p>
-                      <h4>Muito Bom!!!</h4>
-                      <p>Ficou muito bem na minha sala de estar.</p>
-                      <p class="mb-2 text-secondary">
-                        Crítica de Ana Maria - Cliente desde 2009
-                      </p>
-                      <div class="row d-inline-flex">
-                        <p class="pt-3 pe-3" style="width: fit-content">
-                          Achou Útil?
-                        </p>
-                        <div
-                          class="btn-group"
-                          role="group"
-                          aria-label="Basic example"
-                          style="width: fit-content"
-                        >
-                          <button
-                            type="button"
-                            class="text-secondary text-body btn"
-                            style="width: fit-content"
-                          >
-                            <i class="bi bi-hand-thumbs-up-fill me-2"></i>(5)
-                          </button>
-                          <button
-                            type="button"
-                            class="text-secondary text-body btn"
-                            style="width: fit-content"
-                          >
-                            <i class="bi bi-hand-thumbs-down-fill me-2"></i> (1)
-                          </button>
-                        </div>
+                      <div class="btn-group" role="group" aria-label="Basic example" style="width: fit-content">
+                        <button type="button" class="text-secondary text-body btn" style="width: fit-content">
+                          <i class="bi bi-hand-thumbs-up-fill me-2"></i>(5)
+                        </button>
+                        <button type="button" class="text-secondary text-body btn" style="width: fit-content">
+                          <i class="bi bi-hand-thumbs-down-fill me-2"></i> (1)
+                        </button>
                       </div>
                     </div>
                   </div>
-                  <div class="col-12 pb-4">
-                    <div class="p-5 shadow rounded bg-body-primary">
-                      <p class="m-0 mb-2">
-                        <b>
-                          <i class="bi bi-star-fill px-1"></i
-                          ><i class="bi bi-star-fill px-1"></i
-                          ><i class="bi bi-star-fill px-1"></i
-                          ><i class="bi bi-star-fill px-1"></i
-                          ><i class="bi bi-star-fill px-1"></i>
-                        </b>
+                </div>
+                <div class="col-12 pb-4">
+                  <div class="p-5 shadow rounded bg-body-primary">
+                    <p class="m-0 mb-2">
+                      <b>
+                        <i class="bi bi-star-fill px-1"></i><i class="bi bi-star-fill px-1"></i><i
+                          class="bi bi-star-fill px-1"></i><i class="bi bi-star-fill px-1"></i><i
+                          class="bi bi-star-fill px-1"></i>
+                      </b>
+                    </p>
+                    <h4>Excelente!!!</h4>
+                    <p>A Qualidade de Construção é muito Boa</p>
+                    <p class="mb-2 text-secondary">
+                      Crítica de Ana Maria - Cliente desde 2009
+                    </p>
+                    <div class="row d-inline-flex">
+                      <p class="pt-3 pe-3" style="width: fit-content">
+                        Achou Útil?
                       </p>
-                      <h4>Excelente!!!</h4>
-                      <p>A Qualidade de Construção é muito Boa</p>
-                      <p class="mb-2 text-secondary">
-                        Crítica de Ana Maria - Cliente desde 2009
-                      </p>
-                      <div class="row d-inline-flex">
-                        <p class="pt-3 pe-3" style="width: fit-content">
-                          Achou Útil?
-                        </p>
-                        <div
-                          class="btn-group"
-                          role="group"
-                          aria-label="Basic example"
-                          style="width: fit-content"
-                        >
-                          <button
-                            type="button"
-                            class="text-secondary text-body btn"
-                            style="width: fit-content"
-                          >
-                            <i class="bi bi-hand-thumbs-up-fill me-2"></i>(5)
-                          </button>
-                          <button
-                            type="button"
-                            class="text-secondary text-body btn"
-                            style="width: fit-content"
-                          >
-                            <i class="bi bi-hand-thumbs-down-fill me-2"></i> (1)
-                          </button>
-                        </div>
+                      <div class="btn-group" role="group" aria-label="Basic example" style="width: fit-content">
+                        <button type="button" class="text-secondary text-body btn" style="width: fit-content">
+                          <i class="bi bi-hand-thumbs-up-fill me-2"></i>(5)
+                        </button>
+                        <button type="button" class="text-secondary text-body btn" style="width: fit-content">
+                          <i class="bi bi-hand-thumbs-down-fill me-2"></i> (1)
+                        </button>
                       </div>
                     </div>
                   </div>
@@ -2004,200 +1060,191 @@
         </div>
       </div>
     </div>
-    <!-- Footer -->
-    <div
-      class="row justify-content-center align-items-center"
-      style="overflow-x: hidden"
-    >
-      <div class="col-12 px-0" style="padding-top: 5vh">
-        <img
-          src="./assets/img/Footer.png"
-          class="img-fluid d-none d-md-block w-100"
-          alt=""
-        />
-        <img
-          src="./assets/img/FooterMobile.png"
-          class="img-fluid d-md-none w-100"
-          alt=""
-        />
-      </div>
+  </div>
+  <!-- Footer -->
+  <div class="row justify-content-center align-items-center" style="overflow-x: hidden">
+    <div class="col-12 px-0" style="padding-top: 5vh">
+      <img src="./assets/img/Footer.png" class="img-fluid d-none d-md-block w-100" alt="" />
+      <img src="./assets/img/FooterMobile.png" class="img-fluid d-md-none w-100" alt="" />
     </div>
-    <!-- #region scripts -->
-    <script>
-      //Aparecer/Desaparecer Help Canvas
-      $(".helpbtnshow").click(function () {
-        $(".helpCanvas").removeClass("d-none");
-        $(".helpCanvas").removeClass("elementToFadeOut");
-        $(".helpCanvas").addClass("elementToFadeIn");
-      });
-      $(".helpbtn").click(function () {
-        $(".helpCanvas").removeClass("elementToFadeIn");
-        $(".helpCanvas").addClass("elementToFadeOut");
+  </div>
+  <!-- #region scripts -->
+  <script>
+    //Aparecer/Desaparecer Help Canvas
+    $(".helpbtnshow").click(function () {
+      $(".helpCanvas").removeClass("d-none");
+      $(".helpCanvas").removeClass("elementToFadeOut");
+      $(".helpCanvas").addClass("elementToFadeIn");
+    });
+    $(".helpbtn").click(function () {
+      $(".helpCanvas").removeClass("elementToFadeIn");
+      $(".helpCanvas").addClass("elementToFadeOut");
+      setTimeout(() => {
+        $(".helpCanvas").addClass("d-none");
+      }, 500);
+    });
+
+    //Simular Radio Buttons com Buttons
+    $(".tampoSection").click(function () {
+      $(".tampoSection").removeClass("btn-circle-active");
+      $(this).addClass("btn-circle-active");
+    });
+    $(".woodSection").click(function () {
+      $(".woodSection").removeClass("btn-circle-active");
+      $(this).addClass("btn-circle-active");
+    });
+    $(".doorSection").click(function () {
+      $(".doorSection").removeClass("btn-circle-active");
+      $(this).addClass("btn-circle-active");
+    });
+    $(".handlerSection").click(function () {
+      $(".handlerSection").removeClass("btn-circle-active");
+      $(this).addClass("btn-circle-active");
+    });
+    $(".feetSection").click(function () {
+      $(".feetSection").removeClass("btn-circle-active");
+      $(this).addClass("btn-circle-active");
+    });
+
+    //Mudar Tampo no Configurador e Imagem no Carousel e nos seus respectivos botões
+    $("#btn_top_pinho").click(function () {
+      document.getElementById("tampo").innerHTML = "<b>TAMPO:</b> Pinho";
+      $(".confTop").addClass("d-none");
+      $(".topPinho").removeClass("d-none");
+    });
+    $("#btn_top_marble").click(function () {
+      document.getElementById("tampo").innerHTML = "<b>TAMPO:</b> Mármore";
+      $(".confTop").addClass("d-none");
+      $(".topMarble").removeClass("d-none");
+    });
+    $("#btn_top_whiteGlass").click(function () {
+      document.getElementById("tampo").innerHTML =
+        "<b>TAMPO:</b> Branco Vidrado";
+      $(".confTop").addClass("d-none");
+      $(".topWhiteGlass").removeClass("d-none");
+    });
+    $("#btn_top_darkGlass").click(function () {
+      document.getElementById("tampo").innerHTML =
+        "<b>TAMPO:</b> Vidro Fumado";
+      $(".confTop").addClass("d-none");
+      $(".topBlackGlass").removeClass("d-none");
+    });
+    $("#btn_top_plywood").click(function () {
+      document.getElementById("tampo").innerHTML = "<b>TAMPO:</b> Carvalho";
+      $(".confTop").addClass("d-none");
+      $(".topPlywood").removeClass("d-none");
+    });
+
+    //Mudar Madeira no Configurador e Imagem no Carousel e nos seus respectivos botões
+    $("#btn_pinho").click(function () {
+      document.getElementById("wood").innerHTML = "<b>MADEIRA:</b> Pinho";
+      $(".confRack").addClass("d-none");
+      $(".rackPinho").removeClass("d-none");
+      $(".feetPlywood").addClass("d-none-plywood");
+      $(".feetPinho").removeClass("d-none-pinho");
+    });
+    $("#btn_plywood").click(function () {
+      document.getElementById("wood").innerHTML = "<b>MADEIRA:</b> Carvalho";
+      $(".confRack").addClass("d-none");
+      $(".rackPlywood").removeClass("d-none");
+      $(".feetPlywood").removeClass("d-none-plywood");
+      $(".feetPinho").addClass("d-none-pinho");
+    });
+    $("#btn_window_wicker").click(function () {
+      document.getElementById("window").innerHTML = "<b>JANELA:</b> Vime";
+      $(".confWindow").addClass("d-none");
+      $(".windowWicker").removeClass("d-none");
+    });
+    $("#btn_window_glass").click(function () {
+      document.getElementById("window").innerHTML = "<b>JANELA:</b> Vidro";
+      $(".confWindow").addClass("d-none");
+      $(".windowGlass").removeClass("d-none");
+    });
+
+    //Mudar Puxadores no Configurador e Imagem no Carousel e nos seus respectivos botões
+    $("#btn_handler_classic").click(function () {
+      document.getElementById("puxador").innerHTML =
+        "<b>PUXADOR:</b> Clássico";
+      $(".confHandler").addClass("d-none");
+      $(".handlerDefault").removeClass("d-none");
+    });
+    $("#btn_handler_modern").click(function () {
+      document.getElementById("puxador").innerHTML =
+        "<b>PUXADOR:</b> Moderno";
+      $(".confHandler").addClass("d-none");
+      $(".handlerModern").removeClass("d-none");
+    });
+    $("#btn_handler_leather").click(function () {
+      document.getElementById("puxador").innerHTML = "<b>PUXADOR:</b> Pele";
+      $(".confHandler").addClass("d-none");
+      $(".handlerLeather").removeClass("d-none");
+    });
+
+    //Mudar Pés no Configurador e Imagem no Carousel e nos seus respectivos botões
+    $("#btn_feet_classic").click(function () {
+      document.getElementById("feet").innerHTML = "<b>PÉS:</b> Clássico";
+      $(".confFeet").addClass("d-none");
+      $(".feetPinho").removeClass("d-none");
+      $(".feetPlywood").removeClass("d-none");
+    });
+    $("#btn_feet_modern").click(function () {
+      document.getElementById("feet").innerHTML = "<b>PÉS:</b> Moderno";
+      $(".confFeet").addClass("d-none");
+      $(".feetModern").removeClass("d-none");
+    });
+    $("#btn_feet_none").click(function () {
+      document.getElementById("feet").innerHTML =
+        "<b>PÉS:</b> Montado em Parede";
+      $(".confFeet").addClass("d-none");
+    });
+  </script>
+  <script>
+    //Mostrar Botões de Vistas e de Realidade Aumentada
+    $("#galeria").on("slid.bs.carousel", function () {
+      var currentSlide = $("#galeria .active").index();
+      if (currentSlide === 4) {
+        $(".views").removeClass("d-none");
+        $(".ar").removeClass("d-none");
+        $(".views").removeClass("elementToFadeOut");
+        $(".views").addClass("elementToFadeIn");
+        $(".ar").removeClass("elementToFadeOut");
+        $(".ar").addClass("elementToFadeIn");
+      } else {
+        $(".views").addClass("elementToFadeOut");
+        $(".views").removeClass("elementToFadeIn");
+        $(".ar").addClass("elementToFadeOut");
+        $(".ar").removeClass("elementToFadeIn");
         setTimeout(() => {
-          $(".helpCanvas").addClass("d-none");
+          $(".views").addClass("d-none");
+          $(".ar").addClass("d-none");
         }, 500);
-      });
+      }
+    });
+  </script>
+  <!-- #endregion -->
+</body>
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+<!-- Three.js -->
+<script src="./node_modules/three/build/three.min.js"></script>
+<script src="./node_modules/three/examples/js/controls/OrbitControls.js"></script>
+<script src="./node_modules/three/examples/js/loaders/GLTFLoader.js"></script>
+<script src="./node_modules/three/examples/js/loaders/RGBELoader.js"></script>
+<script src="./node_modules/three/examples/js/controls/OrbitControls.js"></script>
+<script src="./node_modules/three/examples/js/postprocessing/EffectComposer.js"></script>
+<script src="./node_modules/three/examples/js/postprocessing/SSAOPass.js"></script>
+<script src="./node_modules/three/examples/js/postprocessing/ShaderPass.js"></script>
+<script src="./node_modules/three/examples/js/postprocessing/SSRPass.js"></script>
+<script src="./node_modules/three/examples/js/shaders/CopyShader.js"></script>
+<script src="./node_modules/three/examples/js/shaders/SSAOShader.js"></script>
+<script src="./node_modules/three/examples/js/shaders/FXAAShader.js"></script>
+<script src="./node_modules/three/examples/js/math/SimplexNoise.js"></script>
+<script src="./node_modules/three/examples/js/postprocessing/OutlinePass.js"></script>
+<script src="./node_modules/three/examples/js/postprocessing/RenderPass.js"></script>
+<script src="./node_modules/three/examples/js/helpers/RectAreaLightHelper.js"></script>
+<!-- GSAP para animações de vistas -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+<!-- Script do Visualizador 3D -->
+<script src="main.js"></script>
 
-      //Simular Radio Buttons com Buttons
-      $(".tampoSection").click(function () {
-        $(".tampoSection").removeClass("btn-circle-active");
-        $(this).addClass("btn-circle-active");
-      });
-      $(".woodSection").click(function () {
-        $(".woodSection").removeClass("btn-circle-active");
-        $(this).addClass("btn-circle-active");
-      });
-      $(".doorSection").click(function () {
-        $(".doorSection").removeClass("btn-circle-active");
-        $(this).addClass("btn-circle-active");
-      });
-      $(".handlerSection").click(function () {
-        $(".handlerSection").removeClass("btn-circle-active");
-        $(this).addClass("btn-circle-active");
-      });
-      $(".feetSection").click(function () {
-        $(".feetSection").removeClass("btn-circle-active");
-        $(this).addClass("btn-circle-active");
-      });
-
-      //Mudar Tampo no Configurador e Imagem no Carousel e nos seus respectivos botões
-      $("#btn_top_pinho").click(function () {
-        document.getElementById("tampo").innerHTML = "<b>TAMPO:</b> Pinho";
-        $(".confTop").addClass("d-none");
-        $(".topPinho").removeClass("d-none");
-      });
-      $("#btn_top_marble").click(function () {
-        document.getElementById("tampo").innerHTML = "<b>TAMPO:</b> Mármore";
-        $(".confTop").addClass("d-none");
-        $(".topMarble").removeClass("d-none");
-      });
-      $("#btn_top_whiteGlass").click(function () {
-        document.getElementById("tampo").innerHTML =
-          "<b>TAMPO:</b> Branco Vidrado";
-        $(".confTop").addClass("d-none");
-        $(".topWhiteGlass").removeClass("d-none");
-      });
-      $("#btn_top_darkGlass").click(function () {
-        document.getElementById("tampo").innerHTML =
-          "<b>TAMPO:</b> Vidro Fumado";
-        $(".confTop").addClass("d-none");
-        $(".topBlackGlass").removeClass("d-none");
-      });
-      $("#btn_top_plywood").click(function () {
-        document.getElementById("tampo").innerHTML = "<b>TAMPO:</b> Carvalho";
-        $(".confTop").addClass("d-none");
-        $(".topPlywood").removeClass("d-none");
-      });
-
-      //Mudar Madeira no Configurador e Imagem no Carousel e nos seus respectivos botões
-      $("#btn_pinho").click(function () {
-        document.getElementById("wood").innerHTML = "<b>MADEIRA:</b> Pinho";
-        $(".confRack").addClass("d-none");
-        $(".rackPinho").removeClass("d-none");
-        $(".feetPlywood").addClass("d-none-plywood");
-        $(".feetPinho").removeClass("d-none-pinho");
-      });
-      $("#btn_plywood").click(function () {
-        document.getElementById("wood").innerHTML = "<b>MADEIRA:</b> Carvalho";
-        $(".confRack").addClass("d-none");
-        $(".rackPlywood").removeClass("d-none");
-        $(".feetPlywood").removeClass("d-none-plywood");
-        $(".feetPinho").addClass("d-none-pinho");
-      });
-      $("#btn_window_wicker").click(function () {
-        document.getElementById("window").innerHTML = "<b>JANELA:</b> Vime";
-        $(".confWindow").addClass("d-none");
-        $(".windowWicker").removeClass("d-none");
-      });
-      $("#btn_window_glass").click(function () {
-        document.getElementById("window").innerHTML = "<b>JANELA:</b> Vidro";
-        $(".confWindow").addClass("d-none");
-        $(".windowGlass").removeClass("d-none");
-      });
-
-      //Mudar Puxadores no Configurador e Imagem no Carousel e nos seus respectivos botões
-      $("#btn_handler_classic").click(function () {
-        document.getElementById("puxador").innerHTML =
-          "<b>PUXADOR:</b> Clássico";
-        $(".confHandler").addClass("d-none");
-        $(".handlerDefault").removeClass("d-none");
-      });
-      $("#btn_handler_modern").click(function () {
-        document.getElementById("puxador").innerHTML =
-          "<b>PUXADOR:</b> Moderno";
-        $(".confHandler").addClass("d-none");
-        $(".handlerModern").removeClass("d-none");
-      });
-      $("#btn_handler_leather").click(function () {
-        document.getElementById("puxador").innerHTML = "<b>PUXADOR:</b> Pele";
-        $(".confHandler").addClass("d-none");
-        $(".handlerLeather").removeClass("d-none");
-      });
-
-      //Mudar Pés no Configurador e Imagem no Carousel e nos seus respectivos botões
-      $("#btn_feet_classic").click(function () {
-        document.getElementById("feet").innerHTML = "<b>PÉS:</b> Clássico";
-        $(".confFeet").addClass("d-none");
-        $(".feetPinho").removeClass("d-none");
-        $(".feetPlywood").removeClass("d-none");
-      });
-      $("#btn_feet_modern").click(function () {
-        document.getElementById("feet").innerHTML = "<b>PÉS:</b> Moderno";
-        $(".confFeet").addClass("d-none");
-        $(".feetModern").removeClass("d-none");
-      });
-      $("#btn_feet_none").click(function () {
-        document.getElementById("feet").innerHTML =
-          "<b>PÉS:</b> Montado em Parede";
-        $(".confFeet").addClass("d-none");
-      });
-    </script>
-    <script>
-      //Mostrar Botões de Vistas e de Realidade Aumentada
-      $("#galeria").on("slid.bs.carousel", function () {
-        var currentSlide = $("#galeria .active").index();
-        if (currentSlide === 4) {
-          $(".views").removeClass("d-none");
-          $(".ar").removeClass("d-none");
-          $(".views").removeClass("elementToFadeOut");
-          $(".views").addClass("elementToFadeIn");
-          $(".ar").removeClass("elementToFadeOut");
-          $(".ar").addClass("elementToFadeIn");
-        } else {
-          $(".views").addClass("elementToFadeOut");
-          $(".views").removeClass("elementToFadeIn");
-          $(".ar").addClass("elementToFadeOut");
-          $(".ar").removeClass("elementToFadeIn");
-          setTimeout(() => {
-            $(".views").addClass("d-none");
-            $(".ar").addClass("d-none");
-          }, 500);
-        }
-      });
-    </script>
-    <!-- #endregion -->
-  </body>
-  <!-- Bootstrap JS -->
-  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
-  <!-- Three.js -->
-  <script src="./node_modules/three/build/three.min.js"></script>
-  <script src="./node_modules/three/examples/js/controls/OrbitControls.js"></script>
-  <script src="./node_modules/three/examples/js/loaders/GLTFLoader.js"></script>
-  <script src="./node_modules/three/examples/js/loaders/RGBELoader.js"></script>
-  <script src="./node_modules/three/examples/js/controls/OrbitControls.js"></script>
-  <script src="./node_modules/three/examples/js/postprocessing/EffectComposer.js"></script>
-  <script src="./node_modules/three/examples/js/postprocessing/SSAOPass.js"></script>
-  <script src="./node_modules/three/examples/js/postprocessing/ShaderPass.js"></script>
-  <script src="./node_modules/three/examples/js/postprocessing/SSRPass.js"></script>
-  <script src="./node_modules/three/examples/js/shaders/CopyShader.js"></script>
-  <script src="./node_modules/three/examples/js/shaders/SSAOShader.js"></script>
-  <script src="./node_modules/three/examples/js/shaders/FXAAShader.js"></script>
-  <script src="./node_modules/three/examples/js/math/SimplexNoise.js"></script>
-  <script src="./node_modules/three/examples/js/postprocessing/OutlinePass.js"></script>
-  <script src="./node_modules/three/examples/js/postprocessing/RenderPass.js"></script>
-  <script src="./node_modules/three/examples/js/helpers/RectAreaLightHelper.js"></script>
-  <!-- GSAP para animações de vistas -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
-  <!-- Script do Visualizador 3D -->
-  <script src="main.js"></script>
 </html>

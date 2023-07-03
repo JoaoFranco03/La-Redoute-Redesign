@@ -125,8 +125,8 @@ renderer.toneMapping = THREE.ACESFilmicToneMapping; //Define o Mapa de Tons
 renderer.outputEncoding = THREE.sRGBEncoding; //Define o Encoding
 renderer.shadowMap.enabled = true; //Liga as Sombras
 renderer.shadowMap.type = THREE.PCFSoftShadowMap; //Liga as Sombras Suaves
-const pmremGenerator = new THREE.PMREMGenerator(renderer); //Liga o HDRi
-pmremGenerator.compileEquirectangularShader(); //Liga o HDRi
+const pmremGenerator = new THREE.PMREMGenerator(renderer); //Liga o HDR
+pmremGenerator.compileEquirectangularShader(); //Liga o HDR
 //#endregion
 
 //#region Resizer
