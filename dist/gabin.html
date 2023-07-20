@@ -53,7 +53,7 @@
       </div>
     </div>
     <div class="row px-0">
-      <div class="col-12 col-md-8 pe-1 pe-4">
+      <div class="col-12 col-lg-8 pe-1 pe-4">
         <div class="sticky-top">
           <div class="row d-block">
             <div id="galeria" class="carousel slide px-0 pt-3">
@@ -484,7 +484,7 @@
         </div>
       </div>
       <!-- Informações e Configurações do Produto -->
-      <div class="col-12 col-md-4 px-5 pt-3">
+      <div class="col-12 col-lg-4 px-5 pt-3">
         <p class="my-0">
           <i class="bi bi-star-fill pe-1"></i><i class="bi bi-star-fill pe-1"></i><i class="bi bi-star-fill pe-1"></i><i
             class="bi bi-star-fill pe-1"></i><i class="bi bi-star-fill pe-1"></i>(3)
@@ -620,8 +620,8 @@
           </div>
         </div>
         <!-- Botão de Adicionar ao Carrinho -->
-        <div class="row px-3 pt-3 mt-3">
-          <div class="col-2 px-0">
+        <div class="row ps-3 pt-3 mt-3 align-items-center">
+          <div class="col-3 px-0">
             <select class="form-select py-2" aria-label="Default select example">
               <option selected value="1">1</option>
               <option value="2">2</option>
@@ -637,7 +637,7 @@
               <option value="12">12</option>
             </select>
           </div>
-          <div class="col-10 my-auto">
+          <div class="col-9">
             <button type="button" class="btn btn-dark w-100 py-2">
               <i class="bi bi-cart-fill pe-2"></i>Adicionar ao Carrinho
             </button>
@@ -646,14 +646,15 @@
         <!-- Entrega / Montagem -->
         <div class="row justify-content-center align-items-center py-4">
           <div class="col-12">
-            <div class="container rounded py-3 px-3 d-block text-center justify-content-center bg-body-secondary">
-              <a class="link d-inline-flex mx-auto" href="https://www.laredoute.pt/services/delivery.aspx">
+            <div
+              class="container rounded mx-0 w-100 py-3 px-3 d-block text-center justify-content-center bg-body-secondary">
+              <a class="link d-inline-flex" href="https://www.laredoute.pt/services/delivery.aspx">
                 <i class="bi bi-truck pe-2"></i>
                 <p class="m-0">Entrega Plus ao Domícilio</p>
                 <i class="bi bi-caret-right-fill"></i>
               </a>
               <hr />
-              <a class="link d-inline-flex mx-auto" href="https://www.laredoute.pt/logisimple.aspx">
+              <a class="link d-inline-flex" href="https://www.laredoute.pt/logisimple.aspx">
                 <i class="bi bi-screwdriver pe-2"></i>
                 <p class="m-0">Serviço de Montagem Disponível</p>
                 <i class="bi bi-caret-right-fill"></i>
@@ -669,158 +670,64 @@
     <h3 class="pt-5 pb-2"><b>Combina Com:</b></h3>
     <div class="row text-nowrap" style="overflow-x: auto; overflow-y: hidden">
       <div class="col-12 p-0">
-        <div class="d-inline-flex">
-          <div class="pe-3" style="width: 350px">
-            <div id="product1" class="itemCard">
-              <div class="itemBackground bg-body-secondary">
-                <img
+        <div class="container p-0 m-0">
+          <div class="row row-cols-1 row-cols-md-4 g-3">
+            <div class="col">
+              <div class="card">
+                <img class="card-img-top"
+                  src="https://cdn.laredoute.com/products/c/a/6/ca6455d6a74920aec07d086696cf530a.jpg?width=700&dpr=1"
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title text-truncate">Cadeirão de mesa HALVA</h5>
+                  <p class="card-text text-secondary">Desde 126€</p>
+                  <button type="button" class="btn w-100 btn-secondary">
+                    <i class="bi bi-cart-plus-fill"></i>
+                    Adicionar ao Carrinho
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col">
+              <div class="card">
+                <img class="card-img-top"
                   src="https://cdn.laredoute.com/products/4/d/c/4dca30937d4354c17467e22bc081d308.jpg?imgopt=twic&twic=v1/cover=1200x1200"
-                  class="img-fluid cover w-100 rounded20 shadow" alt="" />
-                <img id class="product-image-hover"
-                  src="https://cdn.laredoute.com/products/e/9/f/e9f91b6813c9506d25b410ce0df085df.jpg?imgopt=twic&twic=v1/cover=1200x1200" />
-              </div>
-              <div class="row">
-                <div class="col-10 pe-0">
-                  <p class="itemTitle">
-                    <a class="link" href="https://www.laredoute.pt/ppdp/prod-350255507.aspx">
-                      Lote de 2 cadeiras dobráveis, em faia a palhinha, Rivia
-                    </a>
-                  </p>
-                  <p class="itemText text-secondary">Desde 275€</p>
-                </div>
-                <div class="col-2 px-0 pt-2">
-                  <button type="button" name="" id="" class="btn-cart btn btn-secondary">
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title text-truncate">Lote de 2 cadeiras dobráveis, em faia a palhinha, Rivia</h5>
+                  <p class="card-text text-secondary">Desde 275€</p>
+                  <button type="button" class="btn w-100 btn-secondary">
                     <i class="bi bi-cart-plus-fill"></i>
+                    Adicionar ao Carrinho
                   </button>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="pe-3" style="width: 350px">
-            <div id="product2" class="itemCard">
-              <div class="itemBackground bg-body-secondary">
-                <img
+            <div class="col">
+              <div class="card">
+                <img class="card-img-top"
                   src="https://cdn.laredoute.com/products/0/f/3/0f38126c4bd3957f90ab4e276d7c83d5.jpg?imgopt=twic&twic=v1/cover=1200x1200"
-                  class="img-fluid cover w-100 rounded20 shadow" alt="" />
-                <img id class="product-image-hover"
-                  src="https://cdn.laredoute.com/products/1/f/9/1f9dc1369c6b5400da98f7a4554cf30e.jpg?imgopt=twic&twic=v1/cover=1200x1200" />
-              </div>
-              <div class="row">
-                <div class="col-10 pe-0">
-                  <p class="itemTitle">
-                    <a class="link" href="https://www.laredoute.pt/ppdp/prod-350271834.aspx#shoppingtool=multipdp">
-                      Aparador em pinho maciço e palhinha, Gabin
-                    </a>
-                  </p>
-                  <p class="itemText text-secondary">Desde 645€</p>
-                </div>
-                <div class="col-2 px-0 pt-2">
-                  <button type="button" name="" id="" class="btn-cart btn btn-secondary">
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title text-truncate">Aparador em pinho maciço e palhinha, Gabin</h5>
+                  <p class="card-text text-secondary">Desde 645€</p>
+                  <button type="button" class="btn w-100 btn-secondary">
                     <i class="bi bi-cart-plus-fill"></i>
+                    Adicionar ao Carrinho
                   </button>
                 </div>
               </div>
             </div>
-          </div>
-          <div class="pe-3" style="width: 350px">
-            <div id="product2" class="itemCard">
-              <div class="itemBackground bg-white">
-                <img
+            <div class="col">
+              <div class="card">
+                <img class="card-img-top"
                   src="https://cdn.laredoute.com/products/6/4/b/64bdc291e15d45b2b064950457f77022.jpg?imgopt=twic&twic=v1/cover=1200x1200"
-                  class="img-fluid contain w-100 rounded20 shadow" alt="" />
-                <img id class="product-image-hover"
-                  src="https://cdn.laredoute.com/products/2/3/7/237065447f2d2736e5bc87e959589d85.jpg?imgopt=twic&twic=v1/cover=1200x1200" />
-              </div>
-              <div class="row">
-                <div class="col-10 pe-0">
-                  <p class="itemTitle">
-                    <a class="link" href="https://www.laredoute.pt/ppdp/prod-350274916.aspx#shoppingtool=search">
-                      Cadeirão vintage, em carvalho e algodão/linho, Linna
-                    </a>
-                  </p>
-                  <p class="itemText text-secondary">Desde 862€</p>
-                </div>
-                <div class="col-2 px-0 pt-2">
-                  <button type="button" name="" id="" class="btn-cart btn btn-secondary">
+                  alt="Card image cap">
+                <div class="card-body">
+                  <h5 class="card-title text-truncate">Cadeirão vintage, em carvalho e algodão/linho, Linna</h5>
+                  <p class="card-text text-secondary">Desde 862€</p>
+                  <button type="button" class="btn w-100 btn-secondary">
                     <i class="bi bi-cart-plus-fill"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="pe-3" style="width: 350px">
-            <div id="product2" class="itemCard">
-              <div class="itemBackground bg-white">
-                <img
-                  src="https://github.com/JoaoFranco03/joaofranco03.github.io/blob/main/assets/img/Product2.png?raw=true"
-                  class="img-fluid cover w-100 rounded20 shadow" alt="" />
-                <img id class="product-image-hover" src="./assets/img/Product2Hover.png" />
-              </div>
-              <div class="row">
-                <div class="col-10 pe-0">
-                  <p class="itemTitle">
-                    <a class="link"
-                      href="https://www.laredoute.pt/ppdp/prod-350216027.aspx#searchkeyword=movel%20tv&shoppingtool=search">
-                      Móvel para TV em folha de carvalho, 3 portas, Madria
-                    </a>
-                  </p>
-                  <p class="itemText text-secondary">Desde 794€</p>
-                </div>
-                <div class="col-2 px-0 pt-2">
-                  <button type="button" name="" id="" class="btn-cart btn btn-secondary">
-                    <i class="bi bi-cart-plus-fill"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="pe-3" style="width: 350px">
-            <div id="product2" class="itemCard">
-              <div class="itemBackground bg-body-secondary">
-                <img
-                  src="https://cdn.laredoute.com/products/9/6/8/968a23535df9231a127cb2142a7465ea.jpg?imgopt=twic&twic=v1"
-                  class="img-fluid cover w-100 shadow rounded20" alt="" />
-                <img id class="product-image-hover"
-                  src="https://cdn.laredoute.com/products/0/5/0/050f2599a845bdda1095adc12ffc0a70.jpg?imgopt=twic&twic=v1/cover=1200x1200" />
-              </div>
-              <div class="row">
-                <div class="col-10 pe-0">
-                  <p class="itemTitle">
-                    <a class="link" href="https://www.laredoute.pt/ppdp/prod-350275132.aspx#shoppingtool=multipdp">
-                      Mesa redonda, 4 pessoas, folha de nogueira, Lambro
-                    </a>
-                  </p>
-                  <p class="itemText text-secondary">Desde 747€</p>
-                </div>
-                <div class="col-2 px-0 pt-2">
-                  <button type="button" name="" id="" class="btn-cart btn btn-secondary">
-                    <i class="bi bi-cart-plus-fill"></i>
-                  </button>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="pe-3" style="width: 350px">
-            <div id="product2" class="itemCard">
-              <div class="itemBackground bg-body-secondary">
-                <img
-                  src="https://cdn.laredoute.com/products/4/5/7/4572014a68619d624425bed80755a187.jpg?imgopt=twic&twic=v1/cover=1200x1200"
-                  class="img-fluid cover w-100 rounded20 shadow" alt="" />
-                <img id class="product-image-hover"
-                  src="https://cdn.laredoute.com/products/4/1/8/4180b40187d0af7ae269d0b298d99017.jpg?imgopt=twic&twic=v1/cover=1200x1200" />
-              </div>
-              <div class="row">
-                <div class="col-10 pe-0">
-                  <p class="itemTitle">
-                    <a class="link" href="https://www.laredoute.pt/ppdp/prod-350275205.aspx#shoppingtool=multipdp">
-                      Aparador baixo, em carvalho, Lipa
-                    </a>
-                  </p>
-                  <p class="itemText text-secondary">Desde 996€</p>
-                </div>
-                <div class="col-2 px-0 pt-2">
-                  <button type="button" name="" id="" class="btn-cart btn btn-secondary">
-                    <i class="bi bi-cart-plus-fill"></i>
+                    Adicionar ao Carrinho
                   </button>
                 </div>
               </div>
@@ -862,7 +769,7 @@
     <div class="tab-content" id="myTabContent">
       <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0">
         <div class="row px-5 py-5 align-items-center">
-          <div class="col-12 col-md-6">
+          <div class="col-12 col-lg-6">
             <h3><b>Requintado por excelência.</b></h3>
             <p class="pt-2">
               <br />Feito em Pinho maciço ligeiramente polido e palhinha, este
@@ -871,14 +778,14 @@
               <b>La Redoute Intérieurs.</b>
             </p>
           </div>
-          <div class="col-12 col-md-6">
+          <div class="col-12 col-lg-6">
             <img src="./assets/Renders/DefaultViews/default_livingroom_view.png" class="img-fluid rounded" alt="" />
           </div>
         </div>
       </div>
       <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0">
         <div class="row align-items-center">
-          <div class="col-12 pt-3 col-md-5 px-5">
+          <div class="col-12 pt-3 col-lg-5 px-5">
             <table class="table px-5">
               <tbody>
                 <tr>
@@ -908,7 +815,7 @@
               </tbody>
             </table>
           </div>
-          <div class="col-12 col-md-7">
+          <div class="col-12 col-lg-7">
             <img src="./assets/Renders/DefaultViews/measurements.png" class="img-fluid contain ps-5" alt="" />
           </div>
         </div>
@@ -916,7 +823,7 @@
       <div class="tab-pane fade" id="composition-tab-pane" role="tabpanel" aria-labelledby="composition-tab"
         tabindex="0">
         <div class="row px-5 py-5 align-items-center">
-          <div class="col-12 col-md-6">
+          <div class="col-12 col-lg-6">
             <h3 class="pb-2"><b>O Móvel Consiste em:</b></h3>
             <ul>
               <li>
@@ -932,14 +839,14 @@
               <li>Fundo do móvel em MDF decoração em madeira</li>
             </ul>
           </div>
-          <div class="col-12 col-md-6">
+          <div class="col-12 col-lg-6">
             <img src="./assets/Renders/DefaultViews/default_livingroom_view.png" class="img-fluid rounded" alt="" />
           </div>
         </div>
       </div>
       <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0">
         <div class="row px-5 pt-5">
-          <div class="col-12 pt-3 col-md-4">
+          <div class="col-12 pt-3 col-lg-4">
             <div class="py-5 p-3 shadow rounded text-center sticky-top bg-body-primary">
               <h1 class="pb-4">
                 5.0<i class="ps-2 bi bi-star-fill pe-1"></i>
@@ -961,7 +868,7 @@
               </p>
             </div>
           </div>
-          <div class="col-12 col-md-8">
+          <div class="col-12 col-lg-8">
             <div class="row">
               <div class="commentsSection">
                 <div class="col-12 pb-4 pt-3">
