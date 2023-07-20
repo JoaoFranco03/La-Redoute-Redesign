@@ -34,7 +34,6 @@
 
 .itemCard {
   width: 100%;
-  height: 20rem;
   margin-bottom: 0%;
 }
 
@@ -417,7 +416,7 @@ label {
   border-radius: 10px;
 }
 
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1023px) {
   .carouselImg {
     height: 70vh !important;
     object-fit: cover;
